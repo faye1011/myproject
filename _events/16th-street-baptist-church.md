@@ -2,7 +2,7 @@
 layout:
 title: 
 year:
-image: "/baptist_church_bombing.jpeg"
+image: /baptist_church_bombing.jpeg
 description:
 songs related:
 ---

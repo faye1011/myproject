@@ -1,11 +1,12 @@
 ---
 layout: default
 ---
-
+<!-- events -->
 {% for event in site.events %}
 {% if event.category == page.category %} 
-
+<h1> {{ event.year }} </h1>
 <h1> {{ event.title }}</h1>
+<p> {{ event.description }} </p>
 
 
 
@@ -14,15 +15,21 @@ layout: default
 {% endif %}
 {% endfor %}
 
+<!-- song related to event -->
 {% for song in site.songs %}
 {% if song.title == page.title %} 
 
-<h1> {{ song.title }}</h1>
+<h1> {{ song.title }}</h1> 
+<p> {{ song.artist }} {{ song.released }}</p>
+{{ song.video }}
+<p> {{ song.description }}</p>
 
+<pre>{{ song.lyrics }}</pre>
 
 {% else %}
 {% continue %}
 {% endif %}
 {% endfor %}
+
 
 

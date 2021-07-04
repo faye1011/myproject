@@ -2,10 +2,12 @@
 layout: default
 ---
 <!-- events -->
+
 {% for event in site.events %}
 {% if event.category == page.category %} 
 <h1> {{ event.year }} </h1>
 <h1> {{ event.title }}</h1>
+<img src="{{ event.image }}" width=100% class="card-img-top img-fluid" alt="{{ event.title }}">
 <p> {{ event.description }} </p>
 
 

@@ -1,7 +1,7 @@
 ---
 title: Mississippi Goddam
 event: 16th Street Baptist Church Bombing
-category: 
+category: 16thstreetbaptist
 artist: 'Nina Simone'
 released: 1964
 video: <iframe width="560" height="315" src="https://www.youtube.com/embed/LJ25-U3jNWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

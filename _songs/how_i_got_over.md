@@ -1,7 +1,7 @@
 ---
 title: How I Got Over
 event: March On Washington
-category: 
+category: 16thstreetbaptist
 artist: Mahalia Jackson
 released: 1951
 video: <iframe width="560" height="315" src="https://www.youtube.com/embed/l49N8U3d0Bw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

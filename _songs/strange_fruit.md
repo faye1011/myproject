@@ -1,6 +1,5 @@
 ---
 title: Strange Fruit
-tags: hi
 event: Release of Strange Fruit
 category:
 artist: Billie Holiday

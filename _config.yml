@@ -56,8 +56,9 @@ plugins:
 
 include: ['_pages']
 
-collections: 
-  songs: 
-    output: true 
+
+collections:
   events:
     output: true
+  songs:
+    output: true 

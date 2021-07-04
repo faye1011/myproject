@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+{% for song in site.songs %}
+
+<p><a href="{{ song.url }}" > {{ song.title}} </a>  {{ song.artist }}</p>
+
+{% endfor %}

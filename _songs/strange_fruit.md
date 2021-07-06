@@ -1,4 +1,5 @@
 ---
+layout: songs
 title: Strange Fruit
 event: Release of Strange Fruit
 category:

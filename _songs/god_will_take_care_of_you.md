@@ -1,4 +1,5 @@
 ---
+layout: songs
 title: God Will Take Care of You
 event: Selma to Montgoemry March
 category:

@@ -1,4 +1,5 @@
 ---
+layout: songs
 title: Oxford Town
 event: James Meredith Enrollment into University
 category:

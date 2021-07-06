@@ -1,4 +1,5 @@
 ---
+layout: songs
 title: Mississippi Goddam
 event: 16th Street Baptist Church Bombing
 category: 16thstreetbaptist

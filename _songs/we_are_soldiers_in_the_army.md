@@ -1,4 +1,5 @@
 ---
+layout: songs
 title: We Are Soldiers In The Army
 event: Montgomery Bus Boycott
 category:

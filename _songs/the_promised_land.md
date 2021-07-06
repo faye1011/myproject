@@ -1,4 +1,5 @@
 ---
+layout: songs
 title: The Promised Land
 event: Freedom Rides
 category:

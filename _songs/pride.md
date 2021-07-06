@@ -1,4 +1,5 @@
 ---
+layout: songs
 title: Pride (In The Name of Love)
 event: Assassination of MLK
 category:

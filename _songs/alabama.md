@@ -1,5 +1,6 @@
 ---
 title: Alabama
+layout: songs
 event: 16th Street Baptist Church Bombing
 category: 
 artist: John Coletrane

@@ -1,4 +1,5 @@
 ---
+layout: songs
 title: How I Got Over
 event: March On Washington
 category: 16thstreetbaptist

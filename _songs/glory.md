@@ -1,4 +1,5 @@
 ---
+layout: songs
 title: Glory
 event: Selma to Montgoemry March
 category:

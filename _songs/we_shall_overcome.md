@@ -1,4 +1,5 @@
 ---
+layout: songs
 title: We Shall Overcome
 event: Albany Movement
 category: 

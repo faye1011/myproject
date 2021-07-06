@@ -1,0 +1,15 @@
+.container-first {
+    width: 100%;
+}
+.title {
+    text-align: left;
+    padding: 30px;
+}
+.bi {
+    font-size: 5rem;
+}
+.container-arrow {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

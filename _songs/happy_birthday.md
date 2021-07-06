@@ -1,4 +1,5 @@
 ---
+layout: songs
 title: Happy Birthday
 event: Assassination of MLK
 category:

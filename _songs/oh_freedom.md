@@ -1,4 +1,5 @@
 ---
+layout: songs
 title: Oh, Freedom
 event: March on Washington
 category: March on Washington

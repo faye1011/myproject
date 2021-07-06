@@ -2,8 +2,19 @@
 layout: default
 ---
 
-{% for song in site.songs %}
+<h2> {{ page.title}}</h2>
 
-<p><a href="{{ song.url }}" > {{ song.title}} </a>  {{ song.artist }}</p>
-
-{% endfor %}
+<!-- individual songs -->
+<div class="row row-cols-1 row-cols-md-4 g-4 p-5">
+        {% for song in site.songs %}
+        <div class="col mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                   <a href="{{ song.url }}">  <h5 class="card-title"> {{ song.title }} </h5></a>
+                  <p class="card-text"> Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+        </div>
+          {% endfor %}
+</div>

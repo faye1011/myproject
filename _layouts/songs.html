@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{{ page.title }}
+{{ page.event }}
+{{ page.artist }}
+{{ page.video }}
+{{ page.lyrics }}
+
+
+{% for song in site.pages %}
+
+{% if song.title == page.title %}
+
+    <a href="{{ song.url }}"> go to exhibition</a>
+
+{% endif %}
+
+
+{% endfor %}
+
+

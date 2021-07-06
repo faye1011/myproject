@@ -1,4 +1,5 @@
 ---
+layout: songs
 title: A Change Is Gonna Come
 event: Sam Cooke Turned Away From Hotel 
 category:

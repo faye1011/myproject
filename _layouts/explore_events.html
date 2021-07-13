@@ -8,13 +8,13 @@ layout: default
 <div class="row row-cols-1 row-cols-md-4 g-4 p-5">
     {% for event in events_by_year %}
     <div class="col mb-4">
-        <div class="card h-100" style="width: 18rem;" >
-            <img src="{{ event.image }}" class="card-img-top" alt="{{ event.title }}">
-            <div class="card-body">
-            <a href="{{ event.url }}">  <h5 class="card-title"> {{ event.year }}{{ event.title }} </h5></a>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </div>
+            <div class="card bg-dark text-white">
+                <img src="{{ event.image }}" class="card-img" alt="..."  height="180" class="card-img-top image-fluid"  style="width: 100%;
+                height: 18vw;" >
+                <div class="card-img-overlay">
+                  <h5 class="card-title">{{ event.title }}</h5>
+                </div>
+              </div>
     </div>
     {% endfor %}  
 </div>

@@ -4,6 +4,8 @@ title: Strange Fruit
 event: Release of Strange Fruit
 artist: Billie Holiday
 category: strangefruit
+composer:
+record_company:
 released: 1939
 video: https://www.youtube.com/embed/-DGY9HvChXk
 writtenby: Billie Holiday

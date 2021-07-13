@@ -1,6 +1,10 @@
 .container-first {
     width: 100%;
 }
+
+h1, h2 {
+    color: rgb(255, 247, 131);
+}
 .title {
     text-align: left;
     padding: 30px;

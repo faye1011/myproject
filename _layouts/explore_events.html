@@ -1,7 +1,12 @@
 ---
 layout: default
 ---
-<h1> {{ page.title }}</h1>
+
+<link rel="stylesheet" href="../assets/exhibition.css">
+
+<div class="page-title">
+    <h1> {{ page.title }}</h1>
+</div>
 
 {% assign events_by_year = site.events | sort: "year" %}
 

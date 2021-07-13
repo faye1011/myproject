@@ -11,10 +11,11 @@ layout: default
 <div class="container-first">
     <div class="row">
       <div class="title col-lg-4 align-self-center" >
-        <h1><p>{{ event.year }}  </p></h1>
+        <h1><p><i class="bi bi-calendar4-event"></i> {{ event.year }}  </p></h1>
         <h2><p>{{ event.title }}</p></h2>
         
           <p>{{ event.description }}</p>
+          <p> <i class="bi bi-geo-fill"></i> event location</p>
       </div>
 
         <div class="col-lg-8">
@@ -61,25 +62,67 @@ layout: default
     <p> <b>Versions: </b>{{ song.versions }}</p>
     {{ song.image }} 
    </div>
-</div>
 
-  <div class="container-arrow">
-    <i class="bi bi-arrow-down"></i>
-  </div>
-
-  <div class="container-lyrics">
-    <div class="lyric-title">
-      <h1> Lyrics </h1>
-    </div>
-    <div class="lyrics">
-      <pre>{{ song.lyrics }}</pre> 
-    </div>
-  </div>
- 
-
-    {% else %}
+  {% else %}
   {% continue %}
     {% endif %}
   {% endfor %}
 </div>
 
+ <div class="container-arrow">
+    <i class="bi bi-arrow-down"></i>
+  </div>
+
+
+  {% for lyric in site.lyrics %}
+  {% if lyric.title == page.title %} 
+ 
+
+  <div class="container-lyrics">
+    <div class="lyric-title">
+      <h1>  Explore the Lyrics <i class="bi bi-chat-left-quote"></i> </h1>
+    </div>
+    <div class="lyrics">
+      <pre>{{ lyric.lyrics }}</pre> 
+    </div>
+  </div>
+
+  {% else %}
+  {% continue %}
+    {% endif %}
+  {% endfor %}
+
+  
+</div>
+
+
+{{ content }}
+
+<!-- Javascript for lyric meanings-->
+<script>
+
+  function showMore() {
+
+      var element = document.getElementById('more');
+  
+      if(element.style.visibility == 'visible') {
+          element.style.visibility = 'hidden';
+      } else {
+          element.style.visibility = 'visible';
+      }
+  
+  }
+  
+  function showMore2() {
+
+      var element = document.getElementById('more2');
+
+      if(element.style.visibility == 'visible') {
+          element.style.visibility = 'hidden';
+      } else {
+       element.style.visibility = 'visible';
+          }   
+
+  }
+
+</script>

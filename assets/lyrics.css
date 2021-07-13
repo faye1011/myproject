@@ -1,0 +1,12 @@
+#a {
+    display: block;
+}
+  
+#a:hover + #b {
+    display:block;
+}
+  
+#b {
+    display:none;
+}
+  

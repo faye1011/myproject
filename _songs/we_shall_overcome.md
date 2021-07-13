@@ -5,8 +5,8 @@ event: Albany Movement
 category: 
 artist: Guy Carawan, Pete Seeger, Joan Beez
 released: 1961
-video: <iframe width="560" height="315" src="https://www.youtube.com/embed/nM39QUiAsoM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellus
+video: https://www.youtube.com/embed/nM39QUiAsoM
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellusLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellus
 lyrics: |
     We shall overcome, we shall overcome,
     We shall overcome someday;

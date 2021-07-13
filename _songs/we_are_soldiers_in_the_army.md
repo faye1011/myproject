@@ -5,8 +5,8 @@ event: Montgomery Bus Boycott
 category:
 artist: James Cleveland
 released: 1965
-video: <iframe width="560" height="315" src="https://www.youtube.com/embed/bnudHcR_34M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellus
+video: https://www.youtube.com/embed/bnudHcR_34M
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellusLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellus
 lyrics: |
     We are soldiers in the army
     We've got to fight although we have to cry,

@@ -2,11 +2,11 @@
 layout: songs
 title: Mississippi Goddam
 event: 16th Street Baptist Church Bombing
-category: 16thstreetbaptist
-artist: 'Nina Simone'
+category: 16th streetbaptist
+artist: Nina Simone
 released: 1964
-video: <iframe width="560" height="315" src="https://www.youtube.com/embed/LJ25-U3jNWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellus
+video: https://www.youtube.com/embed/LJ25-U3jNWM
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellusLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellus
 lyrics: | 
     The name of this tune is Mississippi Goddam
     And I mean every word of it

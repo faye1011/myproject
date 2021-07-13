@@ -5,8 +5,8 @@ event: March On Washington
 category: 16thstreetbaptist
 artist: Mahalia Jackson
 released: 1951
-video: <iframe width="560" height="315" src="https://www.youtube.com/embed/l49N8U3d0Bw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellus
+video: https://www.youtube.com/embed/l49N8U3d0Bw
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellusLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellus
 lyrics: |
     How I got over
     How did I make it over

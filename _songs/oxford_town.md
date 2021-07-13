@@ -5,8 +5,8 @@ event: James Meredith Enrollment into University
 category:
 artist: Bob Dylan
 released: 1963
-video: <iframe width="560" height="315" src="https://www.youtube.com/embed/sb4PsXncNV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellus
+video: https://www.youtube.com/embed/sb4PsXncNV8
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellusLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellus
 lyrics: |
     Oxford town, Oxford town
     Everybody's got their heads bowed down

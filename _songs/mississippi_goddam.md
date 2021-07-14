@@ -4,10 +4,11 @@ title: Mississippi Goddam
 event: 16th Street Baptist Church Bombing
 category: 16th streetbaptist
 artist: Nina Simone
-composer:
-record_company:
+genre:
+producer: Hal Mooney
+label: Philips Records
+writer: Nina Simone
 released: 1964
 video: https://www.youtube.com/embed/LJ25-U3jNWM
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellusLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellus
-
+description: The song was Simones response to the racially motivated murders of Emmett Till and Medgars Evers in Mississippi as well as the 16th Street Baptist Church Bombing. The song was banned in several US states because of the word ‘goddam’.
 ---

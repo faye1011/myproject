@@ -3,7 +3,7 @@
 }
 
 h1, h2 {
-    color: rgb(255, 247, 131);
+    color: black;
 }
 .title {
     text-align: left;
@@ -14,59 +14,75 @@ img {
     width: 100%;
     float: right;
 }
-.bi {
+
+/* arrow */
+.bi-arrow-down {
     font-size: 3rem;
+}
+
+.bi-geo-alt-fill {
+    font-size: 2rem;
 }
 .container-arrow {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+/*song title */
 .container-title {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
+/* video */
 .container-video {
-    padding-left: 40px;
-    padding-right: 40px;
-}
+    padding: 40px;
 
-.song-info {
-    text-align: left;
-    padding-right: 100px;
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-bottom: 20px;
 
 }
-
-.container-lyrics {
-    padding: 20px;
+.description {
+    padding: 30px;
+    border: solid 3px;
+    border-color: gray;
+    border-radius: 10px;
+    background-color: gray;
 }
+.container-table {
+    padding: 40px;
+}
+
+.image-container {
+    height: 400px;
+}
+.cover-art {
+    width: 300px
+}
+
+/* lyrics */
 .lyric-title {
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 20px;
 }
 .lyrics {
-    padding-left: 30px;
+    float: right;
 }
 
-.container-fluid {
-    background-color: white;
-    
-  
-}
-.lyrics {
-    font-family: Arial, Helvetica, sans-serif;
 
+h3 {
+    text-align: center;
 }
-   
+.container-md {
+    background-color: rgb(247, 247, 247);
+    padding-top: 20px;}
+
+/* JavaScript css */
 .line1 {
-    background-color: white;
+    background-color: rgb(213, 241, 53);
     padding: 2px;
+    border: rgb(213, 241, 53);
+    border-radius: 5px;
 }
    
 #more {
@@ -76,8 +92,10 @@ img {
 }
    
 .line2 {
-    background-color: white;
+    background-color: rgb(213, 241, 53);
     padding: 2px;
+    border: rgb(213, 241, 53);
+    border-radius: 5px;
 }
 
  #more2 {
@@ -86,11 +104,3 @@ img {
     float: left;
 }
 
-#first-col {
-    padding: 20px;
-    background-color: none;
-}
-#second-col {
-    padding: 20px;
-    background-color: black;
-}

@@ -11,11 +11,11 @@ layout: default
 <div class="container-first">
     <div class="row">
       <div class="title col-lg-4 align-self-center" >
-        <h1><p><i class="bi bi-calendar4-event"></i> {{ event.year }}  </p></h1>
-        <h2><p>{{ event.title }}</p></h2>
+        <h1><p> {{ event.year }}  </p></h1>
+        <h2><p> {{ event.title }}</p></h2>
         
           <p>{{ event.description }}</p>
-          <p> <i class="bi bi-geo-fill"></i> event location</p>
+          <p> <i class="bi bi-geo-alt-fill"></i></p>
       </div>
 
         <div class="col-lg-8">
@@ -38,60 +38,78 @@ layout: default
     {% if song.title == page.title %} 
 
   
-   
-    <div class="container-title">
+<div class="container-title">
       <h1> {{ song.title }}</h1> 
-    </div>
+</div>
 
-  <div class="container-video">
+<div class="container-video">
       <div class="ratio ratio-16x9">
         <iframe width="560" height="315" src="{{ song.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+</div>
+        
+<div class="container-sm song-info">
+    <div class="description">
+      <p>Description</p>
+      <p>{{ song.description }}</p>
+    </div>
+  <div class="container-table">
+    <table class="table table-striped">
+      <tbody>
+        <tr>
+          <th scope="row">Artist</th>
+          <td>{{ song.artist }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Release Date</th>
+          <td>{{ song.released }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Label</th>
+          <td>{{ song.label }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Genre</th>
+          <td>{{ song.genre }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Producer</th>
+          <td>{{ song.producer }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Writer</th>
+          <td>{{ song.writer }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Versions</th>
+          <td>{{ song.versions }}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-
-<div class="song-info">
-  <div class="container-desc">
-      <p> <b>Description:</b> {{ song.description }}</p>
+</div>
+<!-- image container -->
+<div class="image-container">
+  <div class="cover-art mx-auto">
+    <img src="{{song.coverart }}" class="" alt="...">
   </div>
-
-
-  <div class="container-artist">
-    <p> <b>Artist:</b> {{ song.artist }} <p>
-    <p> <b>Written by:</b> {{ song.writtenby }}</p>
-    <p> <b>Release date: </b>{{ song.released }}</p>
-    <p> <b>Versions: </b>{{ song.versions }}</p>
-    {{ song.image }} 
-   </div>
-
+</div>
+</div>
   {% else %}
   {% continue %}
     {% endif %}
   {% endfor %}
 </div>
 
+
  <div class="container-arrow">
     <i class="bi bi-arrow-down"></i>
   </div>
 
 
-  {% for lyric in site.lyrics %}
-  {% if lyric.title == page.title %} 
- 
-
-  <div class="container-lyrics">
-    <div class="lyric-title">
-      <h1>  Explore the Lyrics <i class="bi bi-chat-left-quote"></i> </h1>
-    </div>
-    <div class="lyrics">
-      <pre>{{ lyric.lyrics }}</pre> 
-    </div>
-  </div>
-
-  {% else %}
-  {% continue %}
-    {% endif %}
-  {% endfor %}
-
+<!-- lyrics container-->
+<div class="lyric-title">
+    <h1> Explore the Lyrics </h1>
   
 </div>
 

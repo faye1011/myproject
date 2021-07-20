@@ -16,12 +16,15 @@ img {
 }
 
 /* arrow */
-.bi-arrow-down {
-    font-size: 3rem;
+
+.bi {
+    font-size: 1rem;
 }
 
-.bi-geo-alt-fill {
-    font-size: 2rem;
+.italic {
+    font-weight:400;
+    font-style: italic;
+
 }
 .container-arrow {
     text-align: center;
@@ -37,20 +40,9 @@ img {
 }
 
 /* video */
+
 .container-video {
-    padding: 40px;
-
-
-}
-.description {
-    padding: 30px;
-    border: solid 3px;
-    border-color: gray;
-    border-radius: 10px;
-    background-color: gray;
-}
-.container-table {
-    padding: 40px;
+    padding: 10px;
 }
 
 .image-container {
@@ -60,13 +52,22 @@ img {
     width: 300px
 }
 
+#arrow {
+    font-size: 3rem;
+}
+
 /* lyrics */
 .lyric-title {
     text-align: center;
     padding: 20px;
 }
 .lyrics {
-    float: right;
+    float: left;
+    font-family:'Montserrat', sans-serif ;
+    font-size: x-large;
+    font-weight: 400;
+    padding: 30px;
+
 }
 
 
@@ -75,9 +76,22 @@ h3 {
 }
 .container-md {
     background-color: rgb(247, 247, 247);
-    padding-top: 20px;}
+    padding-top: 50px;
+    margin: auto;
+}
 
 /* JavaScript css */
+
+
+.box {
+    background-color: blue;
+    border: 2px solid white;
+    position: relative;
+
+
+}
+
+
 .line1 {
     background-color: rgb(213, 241, 53);
     padding: 2px;
@@ -87,8 +101,7 @@ h3 {
    
 #more {
     visibility: hidden;
-    background-color: burlywood;
-    float: left;
+    float: right; 
 }
    
 .line2 {
@@ -100,7 +113,7 @@ h3 {
 
  #more2 {
     visibility: hidden;
-    background-color: burlywood;
-    float: left;
+    float: right;
+
 }
 

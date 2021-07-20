@@ -15,7 +15,13 @@ layout: default
         <h2><p> {{ event.title }}</p></h2>
         
           <p>{{ event.description }}</p>
-          <p> <i class="bi bi-geo-alt-fill"></i></p>
+           {% if event.location %} 
+           <p class="italic"> <i class="bi bi-geo-alt-fill"></i> {{ event.location }}</p>
+           {% endif %}
+           {% if event.date %}
+           <p class="italic"> <i class="bi bi-calendar-event"></i>   {{ event.date |date_to_long_string }}</p>
+           {% endif %}
+          
       </div>
 
         <div class="col-lg-8">
@@ -29,7 +35,7 @@ layout: default
 </div>
 
 <div class="container-arrow">
-    <i class="bi bi-arrow-down"></i>
+   <i class="bi bi-chevron-down" id="arrow"></i>
 </div>
 
 
@@ -43,51 +49,58 @@ layout: default
 </div>
 
 <div class="container-video">
+  <div class="row">
+    <div class="col-lg-8">
       <div class="ratio ratio-16x9">
         <iframe width="560" height="315" src="{{ song.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
-</div>
-        
-<div class="container-sm song-info">
-    <div class="description">
-      <p>Description</p>
-      <p>{{ song.description }}</p>
+    <div class="col-lg-4">
+       <div class="container-table">
+         <table class="table table-striped">
+            <tbody>
+              <tr>
+                <th scope="row">Artist</th>
+                <td>{{ song.artist }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Release Date</th>
+                <td>{{ song.released }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Label</th>
+                <td>{{ song.label }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Genre</th>
+                <td>{{ song.genre }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Producer(s)</th>
+                <td>{{ song.producer }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Writer(s)</th>
+                <td>{{ song.writer }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Version(s)</th>
+                <td>{{ song.versions }}</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="container-sm song-info">
+              <div class="description">
+                <p>{{ song.description }}</p>
+              </div>
+        </div>
+      </div>
     </div>
-  <div class="container-table">
-    <table class="table table-striped">
-      <tbody>
-        <tr>
-          <th scope="row">Artist</th>
-          <td>{{ song.artist }}</td>
-        </tr>
-        <tr>
-          <th scope="row">Release Date</th>
-          <td>{{ song.released }}</td>
-        </tr>
-        <tr>
-          <th scope="row">Label</th>
-          <td>{{ song.label }}</td>
-        </tr>
-        <tr>
-          <th scope="row">Genre</th>
-          <td>{{ song.genre }}</td>
-        </tr>
-        <tr>
-          <th scope="row">Producer</th>
-          <td>{{ song.producer }}</td>
-        </tr>
-        <tr>
-          <th scope="row">Writer</th>
-          <td>{{ song.writer }}</td>
-        </tr>
-        <tr>
-          <th scope="row">Versions</th>
-          <td>{{ song.versions }}</td>
-        </tr>
-      </tbody>
-    </table>
   </div>
 </div>
+        
+
+  
 <!-- image container -->
 <div class="image-container">
   <div class="cover-art mx-auto">
@@ -102,8 +115,8 @@ layout: default
 </div>
 
 
- <div class="container-arrow">
-    <i class="bi bi-arrow-down"></i>
+ <div class="container-arrow" id="arrow">
+    <i class="bi bi-chevron-down"></i>
   </div>
 
 
@@ -115,6 +128,7 @@ layout: default
 
 
 {{ content }}
+
 
 <!-- Javascript for lyric meanings-->
 <script>

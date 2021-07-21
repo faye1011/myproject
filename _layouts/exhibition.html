@@ -50,30 +50,28 @@ layout: default
   <div class="row justify-content-center">
   
 <div class="container-title">
-      <h1><p> {{ song.title }}</p></h1> <h4> <p>{{song.artist}}</p></h4>
+      <h1><p> {{ song.title }}</p></h1> <h4> <p>{{song.artist}}</p></h>
       
 </div>
 
-    <div class="col-lg-6 ">
-          <div class="card" id="cover-art1">
+    <div class="col-md-4 ">
+          <div class="cover-art2">
           <img src="{{ song.coverart }}" class="" alt="..." width="300px" height="300px">
           </div>
-          <div class="card bg-dark text-white" id="cover-art2">
-            <img src="{{ song.coverart2 }}" class="" alt="..." width="300px" height="300px">
-              <div class="card-img-overlay">  
-                <p class="card-text">Vinyl cover</p>
-              </div>     
-          </div>
+          <div class="cover-art2">
+          <img src="{{ song.coverart2 }}" class="" alt="..." width="300px" height="300px">
+          <p>source</p>
+          </div>     
     </div>
     <!--- writing about the song -->
-    <div class="col-lg-6 ">
+    <div class="col-md-8">
       One of two columns
     </div>
 
   </div>
 </div>
 
-
+ 
 
 
 

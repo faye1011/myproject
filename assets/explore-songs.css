@@ -1,5 +1,40 @@
+body {
+    font-size: large;
+
+    background-color:  rgb(255, 255, 247);
+    color: black;
+}
+
 .page-title {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 20px;
+    border-bottom: solid 2px black;
+
 }
+.row {
+    background-color:rgb(255, 255, 247);
+}
+
+
+a {
+    color: black;
+    text-decoration:none;
+    font-weight: 400;
+
+}
+
+a:hover {
+    color: rgb(53, 53, 52)
+}
+
+.artist {
+    font-size: medium;
+    font-weight: 300;
+}
+#songs-container{
+    padding: 40px;
+    border-bottom: solid 2px black;
+    background-color:rgb(255, 255, 247);
+}
+

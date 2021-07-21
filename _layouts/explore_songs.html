@@ -7,16 +7,26 @@ layout: default
   <h1> {{ page.title}}</h1>
 </div>
 
-<!-- individual songs -->
-<div class="row row-cols-1 row-cols-md-4 g-4 p-5">
-        {% for song in site.songs %}
-        <div class="col mb-4">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                   <a href="{{ song.url }}">  <h5 class="card-title"> {{ song.title }} </h5></a>
-                  <p class="card-text"> {{ song.artist }}</p>
-                </div>
-              </div>
-        </div>
-          {% endfor %}
+
+<div class="container-fluid" id="songs-container">
+  <div class="row justify-content-center">
+    <div class="col-4" id="column-one">
+      {% for song in site.songs limit:7 %}
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="{{song.url}}"> <i class="bi bi-record-circle-fill"></i> {{ song.title }} <br> <em><span class="artist">{{song.artist}}</span></em></a></li>
+           
+          </ul>
+             {% endfor %}
+    </div>
+      
+    <div class="col-4">
+   {% for song in site.songs offset:7 %}
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="{{song.url}}"> <i class="bi bi-record-circle-fill"></i> {{ song.title }}<br> <em> <span class="artist">  {{song.artist}}</span></em></a></li>
+             
+        </ul>
+    {% endfor %}
+     </div>
+  </div>
 </div>
+

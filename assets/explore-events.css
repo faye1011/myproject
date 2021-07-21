@@ -2,13 +2,27 @@
     text-align: center;
     padding-top: 30px;
     padding-bottom: 20px;
+    border-bottom: solid 2px black;
+
 }
 
 .card-title {
-    color: rgb(255, 247, 138);
+    color: white;
     text-align: center;
 }
 
 .card-img-overlay {
-    background: rgba(0, 0, 0, 0.6)
+    background: rgba(0, 0, 0, 0.7);
+}
+.card{
+    padding: 10px;
+    
+    border-radius: 0;
+}
+a {
+    text-decoration: none;
+}
+.card:hover {
+    background-color: rgb(24, 24, 24);
+    
 }

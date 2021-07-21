@@ -8,3 +8,19 @@ h1 {
     font-size: 55px;
     font-weight: 400;
 }
+
+li, ul {
+    list-style-type: none;
+}
+a {
+    color: white;
+}
+.bi {
+    font-size: 1rem;
+}
+nav {
+    background-color: black;
+}
+.navbar {
+    background-color: black;
+}

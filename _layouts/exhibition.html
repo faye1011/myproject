@@ -10,21 +10,26 @@ layout: default
 
 <div class="container-first">
     <div class="row">
-      <div class="title col-lg-4 align-self-center" >
-        <h1><p> {{ event.year }}  </p></h1>
+      <div class="title col-lg-6 align-self-center" >
+        <h1><p></i> {{ event.year }}  </p></h1>
         <h2><p> {{ event.title }}</p></h2>
-        
-          <p>{{ event.description }}</p>
-           {% if event.location %} 
+        {% if event.location %} 
            <p class="italic"> <i class="bi bi-geo-alt-fill"></i> {{ event.location }}</p>
            {% endif %}
            {% if event.date %}
            <p class="italic"> <i class="bi bi-calendar-event"></i>   {{ event.date |date_to_long_string }}</p>
            {% endif %}
+
+          <p>{{ event.description }}</p>
+        
+           <p class="placeholder"> placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder</p>
           
+          <div class="down-arrow">
+              <p> <i class="bi bi-arrow-down" id="down-arrow"></i></p>
+          </div>
       </div>
 
-        <div class="col-lg-8">
+        <div class="col-lg-6">
         <img src="{{ event.image }}" class="img-fluid" alt="{{ event.title }}">
        </div>
     </div>
@@ -34,19 +39,43 @@ layout: default
   {% endfor %}
 </div>
 
-<div class="container-arrow">
-   <i class="bi bi-chevron-down" id="arrow"></i>
-</div>
 
 
 <!--song -->
 {% for song in site.songs %}
     {% if song.title == page.title %} 
 
+    <!-- the images of the cover-art of the song -->
+<div class="container-second">
+  <div class="row justify-content-center">
   
 <div class="container-title">
-      <h1> {{ song.title }}</h1> 
+      <h1><p> {{ song.title }}</p></h1> <h4> <p>{{song.artist}}</p></h4>
+      
 </div>
+
+    <div class="col-lg-6 ">
+          <div class="card" id="cover-art1">
+          <img src="{{ song.coverart }}" class="" alt="..." width="300px" height="300px">
+          </div>
+          <div class="card bg-dark text-white" id="cover-art2">
+            <img src="{{ song.coverart2 }}" class="" alt="..." width="300px" height="300px">
+              <div class="card-img-overlay">  
+                <p class="card-text">Vinyl cover</p>
+              </div>     
+          </div>
+    </div>
+    <!--- writing about the song -->
+    <div class="col-lg-6 ">
+      One of two columns
+    </div>
+
+  </div>
+</div>
+
+
+
+
 
 <div class="container-video">
   <div class="row">
@@ -57,7 +86,14 @@ layout: default
     </div>
     <div class="col-lg-4">
        <div class="container-table">
-         <table class="table table-striped">
+        <div class="container-sm song-info">
+          <div class="description">
+            <p> <i class="bi bi-award"></i> {{ song.award1 }}</p>
+            <p> <i class="bi bi-award"></i> {{ song.award2 }}</p>
+            <p> <i class="bi bi-award"></i> {{ song.award3 }}</p>
+          </div>
+   
+         <table class="table table-dark table-hover">
             <tbody>
               <tr>
                 <th scope="row">Artist</th>
@@ -89,24 +125,10 @@ layout: default
               </tr>
             </tbody>
           </table>
-          <div class="container-sm song-info">
-              <div class="description">
-                <p>{{ song.description }}</p>
-              </div>
-        </div>
+         </div>
       </div>
     </div>
   </div>
-</div>
-        
-
-  
-<!-- image container -->
-<div class="image-container">
-  <div class="cover-art mx-auto">
-    <img src="{{song.coverart }}" class="" alt="...">
-  </div>
-</div>
 </div>
   {% else %}
   {% continue %}
@@ -115,46 +137,12 @@ layout: default
 </div>
 
 
- <div class="container-arrow" id="arrow">
-    <i class="bi bi-chevron-down"></i>
-  </div>
-
-
 <!-- lyrics container-->
 <div class="lyric-title">
     <h1> Explore the Lyrics </h1>
+    <p>Hover over highlighted lyrics to explore their meaning:</p>
   
 </div>
 
 
 {{ content }}
-
-
-<!-- Javascript for lyric meanings-->
-<script>
-
-  function showMore() {
-
-      var element = document.getElementById('more');
-  
-      if(element.style.visibility == 'visible') {
-          element.style.visibility = 'hidden';
-      } else {
-          element.style.visibility = 'visible';
-      }
-  
-  }
-  
-  function showMore2() {
-
-      var element = document.getElementById('more2');
-
-      if(element.style.visibility == 'visible') {
-          element.style.visibility = 'hidden';
-      } else {
-       element.style.visibility = 'visible';
-          }   
-
-  }
-
-</script>

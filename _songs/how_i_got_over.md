@@ -5,8 +5,12 @@ event: March On Washington
 category: march on washington
 artist: Mahalia Jackson
 writer: Clara Ward
-producer:
+writer:
 label:
+producer:
+award1:
+award2:
+award3:
 genre: Gospel hymn
 versions: Orginal - Clara Ward
 released: 1951

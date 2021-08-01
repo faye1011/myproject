@@ -7,6 +7,9 @@ category: strangefruit
 producer: Milt Gabler
 label: Commodore
 genre: Blues, Jazz
+award1:
+award2:
+award3:
 writer: Abel Meeropol
 released: 1939
 video: https://www.youtube.com/embed/-DGY9HvChXk

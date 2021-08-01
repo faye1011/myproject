@@ -4,9 +4,12 @@ title: Mississippi Goddam
 event: 16th Street Baptist Church Bombing
 category: 16th streetbaptist
 artist: Nina Simone
-genre:
+
 producer: Hal Mooney
 label: Philips Records
+award1:
+award2:
+award3:
 writer: Nina Simone
 released: 1964
 video: https://www.youtube.com/embed/LJ25-U3jNWM

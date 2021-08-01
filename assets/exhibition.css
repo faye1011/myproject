@@ -8,7 +8,15 @@
 .container-second {
 width: 80%;
 margin:auto;  
+padding-bottom: 40px;
     
+}
+
+.container-video {
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .title {
     text-align: left;
@@ -45,53 +53,12 @@ margin:auto;
     padding-bottom: 30px;
     
 }
-
+.btn {
+    padding: 10px;
+}
 
 
 /* video */
-
-.container-video {
-    padding-left: 20px;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    background-color:  #191919;
-    color: white;
-}
-
-#cover-art1 {
-    float: right;
-    padding: 10px;
-}
-#cover-art2 {
-    float: left;
-    padding: 10px;
-}
-
-.card-img-overlay {
-    background-color: black;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #black;
-    }
-
-    
-.card {
-    display: block;
-}
-
-.card:hover .card-img-overlay {
-    opacity: 0.5;
-  }
-
-
-}
 
 #arrow {
     font-size: 3rem;
@@ -109,11 +76,13 @@ margin:auto;
     height: auto;
     font-weight: 400;
     font-size: large;
-    
     box-shadow:3px 3px 10px grey;  
 
 }
 
+.lyric-title {
+    text-align: center;
+}
 
 
 h3 {

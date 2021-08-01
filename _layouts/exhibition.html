@@ -44,38 +44,10 @@ layout: default
 <!--song -->
 {% for song in site.songs %}
     {% if song.title == page.title %} 
-
-    <!-- the images of the cover-art of the song -->
-<div class="container-second">
-  <div class="row justify-content-center">
-  
-<div class="container-title">
-      <h1><p> {{ song.title }}</p></h1> <h4> <p>{{song.artist}}</p></h>
-      
-</div>
-
-    <div class="col-md-4 ">
-          <div class="cover-art2">
-          <img src="{{ song.coverart }}" class="" alt="..." width="300px" height="300px">
-          </div>
-          <div class="cover-art2">
-          <img src="{{ song.coverart2 }}" class="" alt="..." width="300px" height="300px">
-          <p>source</p>
-          </div>     
-    </div>
-    <!--- writing about the song -->
-    <div class="col-md-8">
-      One of two columns
-    </div>
-
+<div class="container-video"> 
+  <div class="container-title">
+          <h1><p> {{ song.title }}</p></h1> <h4> <p>{{song.artist}}</p></h>
   </div>
-</div>
-
- 
-
-
-
-<div class="container-video">
   <div class="row">
     <div class="col-lg-8">
       <div class="ratio ratio-16x9">
@@ -85,12 +57,7 @@ layout: default
     <div class="col-lg-4">
        <div class="container-table">
         <div class="container-sm song-info">
-          <div class="description">
-            <p> <i class="bi bi-award"></i> {{ song.award1 }}</p>
-            <p> <i class="bi bi-award"></i> {{ song.award2 }}</p>
-            <p> <i class="bi bi-award"></i> {{ song.award3 }}</p>
-          </div>
-   
+         
          <table class="table table-dark table-hover">
             <tbody>
               <tr>
@@ -123,15 +90,24 @@ layout: default
               </tr>
             </tbody>
           </table>
+          <div class="description">
+            <p> <i class="bi bi-award"></i> {{ song.award1 }}</p>
+            <p> <i class="bi bi-award"></i> {{ song.award2 }}</p>
+            <p> <i class="bi bi-award"></i> {{ song.award3 }}</p>
+          </div>
+   
          </div>
       </div>
     </div>
   </div>
-</div>
   {% else %}
   {% continue %}
     {% endif %}
   {% endfor %}
+</div>
+
+
+  
 </div>
 
 
@@ -143,4 +119,7 @@ layout: default
 </div>
 
 
+
 {{ content }}
+
+{% include navigation.html %}

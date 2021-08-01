@@ -63,5 +63,5 @@ collections:
     output: true
   songs:
     output: true 
-  lyrics:
+  artists:
     output: true

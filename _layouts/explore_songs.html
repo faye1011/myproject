@@ -22,7 +22,7 @@ layout: default
     <div class="col-4">
    {% for song in site.songs offset:7 %}
           <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="{{song.url}}"> <i class="bi bi-record-circle-fill"></i> {{ song.title }}<br> <em> <span class="artist">  {{song.artist}}</span></em></a></li>
+            <li class="list-group-item"><a href="{{page.url}}"> <i class="bi bi-record-circle-fill"></i> {{ song.title }}<br> <em> <span class="artist">  {{song.artist}}</span></em></a></li>
              
         </ul>
     {% endfor %}

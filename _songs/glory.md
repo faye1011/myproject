@@ -1,5 +1,5 @@
 ---
-layout: songs
+layout: default
 title: Glory
 event: Selma to Montgoemry March
 category:

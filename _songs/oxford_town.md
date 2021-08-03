@@ -1,12 +1,13 @@
 ---
-layout: songs
+layout: default
 title: Oxford Town
 event: James Meredith Enrollment into University
 category:
 artist: Bob Dylan
-writer:
-label:
-producer:
+writer: Bob Dylan
+genre: Folk
+label: Columbia Records
+producer: 
 award1:
 award2:
 award3:

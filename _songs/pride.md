@@ -1,5 +1,5 @@
 ---
-layout: songs
+layout: default
 title: Pride (In The Name of Love)
 event: Assassination of MLK
 category:

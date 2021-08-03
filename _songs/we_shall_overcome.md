@@ -1,9 +1,10 @@
 ---
-layout: songs
+layout: default
 title: We Shall Overcome
 event: Albany Movement
 category: 
 artist: Guy Carawan, Pete Seeger, Joan Beez
+genre: Folk
 writer:
 label:
 producer:

@@ -1,0 +1,14 @@
+.button-prev {
+    float: left;
+  
+   
+}
+.button-next {
+    float: right;
+   
+}
+.navigation {
+    width: 80%;
+    margin: auto;
+}
+

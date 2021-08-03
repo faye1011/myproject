@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="../assets/navigation_light.css">
+<div class="navigation">
+    {% for node in site.pages %}
+        {% assign next = page.index | plus: 1 %}
+        {% assign prev = page.index | minus: 1 %}
+        {% if prev == node.index %}
+            {% assign prev_page = node %}
+        {% endif %}
+        {% if next == node.index %}
+            {% assign next_page = node %}
+        {% endif %}
+    {% endfor %}
+
+    <div class="button-prev">
+        <button type="button" class="btn btn-sm">
+        {% if prev_page %}
+            <a href="{{ prev_page.url }}" style="color:white"> <i class="bi bi-caret-left"></i>{{prev_page.category}}</a>
+        {% endif %}
+        </button>
+    </div>
+
+    <div class="button-next">
+        <button type="button" class="btn btn-sm">
+        {% if next_page %}
+            <a href="{{ next_page.url }}"" style="color:white"> {{next_page.category}} <i class="bi bi-caret-right"></i></a>
+        {% endif %}
+        </button>
+    
+    </div> 
+</div>
+

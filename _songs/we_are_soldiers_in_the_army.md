@@ -1,9 +1,10 @@
 ---
-layout: songs
+layout: default
 title: We Are Soldiers In The Army
 event: Montgomery Bus Boycott
 category:
 artist: James Cleveland
+genre: Gospel
 writer:
 label:
 producer:

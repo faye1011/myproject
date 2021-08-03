@@ -1,14 +1,13 @@
 ---
-layout: songs
+layout: default
 title: How I Got Over
 event: March On Washington
 category: march on washington
 artist: Mahalia Jackson
 writer: Clara Ward
-writer:
-label:
-producer:
-award1:
+label: Columbia / Legacy
+producer: Irving Townsend
+award1: Grammy Award for Best Soul Gospel Performance (by Mahalia Jackson), 1976
 award2:
 award3:
 genre: Gospel hymn

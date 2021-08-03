@@ -1,5 +1,5 @@
 ---
-layout: songs
+layout: default
 title: God Will Take Care of You
 event: Selma to Montgomery March
 category:

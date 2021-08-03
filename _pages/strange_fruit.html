@@ -5,32 +5,42 @@ category: release of strange fruit
 title: Strange Fruit
 index: 0
 ---
-
-<div class="container-fluid">
+  
+<div class="container-fluid" id="lyrics">
+  <div class="container-lyrics ">
+    <h3>{{ page.title }}</h3>
     <div class="row">
-      <div class="col-sm-6" id="first-col">
-        <pre class="lyrics">
-            Southern trees bear a strange fruit
-            Blood on the leaves and blood at the root
-            Black bodies swingin' in the Southern breeze
-            Strange fruit hangin' from the poplar trees
-            Pastoral scene of the gallant South
-            The bulgin' eyes and the twisted mouth
-            Scent of magnolias sweet and fresh
-            Then the sudden smell of burnin' flesh
-            Here is a fruit for the crows to pluck
-            For the rain to gather
-            For the wind to suck
-            For the sun to rot
-            For the tree to drop
-            Here is a strange and bitter crop
-            </pre>
+      <div class="col-6">
+        <p>
+          Southern trees bear a strange fruit <br>
+          Blood on the leaves and blood at the root<br>
+          Black bodies swingin' in the Southern breeze<br>
+          Strange fruit hangin' from the poplar trees<br>
+          Pastoral scene of the gallant South<br>
+          The bulgin' eyes and the twisted mouth<br>
+          Scent of magnolias sweet and fresh<br>
+          Then the sudden smell of burnin' flesh<br>
+          Here is a fruit for the crows to pluck<br>
+          For the rain to gather<br>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">  For the wind to suck</button><br>
+          For the sun to rot<br>
+          For the tree to drop<br>
+          Here is a strange and bitter crop<br>
+       </p>   
       </div>
-
-        <div class="col-sm-6" id="second-col">
-        <span class="meaning" id="more">this is the meaning</span> </br>
-    </br>
-        <span class="meaning" id="more2">this is the second meaning</span>
+      <div class="col-6">
+       <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <div class="card card-body">
+          Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
         </div>
+      </div>
+      </div>
     </div>
+  </div>
+  </div>
 </div>
+ 
+ 
+
+
+  

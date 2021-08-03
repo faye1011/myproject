@@ -1,12 +1,13 @@
 ---
-layout: songs
+layout: default
 title: The Promised Land
 event: Freedom Rides
 category:
 artist: Chuck Berry
-writer:
-label:
-producer:
+writer: Chuck Berry
+genre: Rock and roll
+label: Chess Records
+producer: Leonard Chess, Philip Chess
 award1:
 award2:
 award3:

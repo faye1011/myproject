@@ -1,0 +1,18 @@
+.button-prev {
+    float: left;
+  
+   
+}
+.button-next {
+    float: right;
+   
+}
+
+a {
+    color: black;
+}
+
+.navigation {
+    width: 90%;
+    margin: auto;
+}

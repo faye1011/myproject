@@ -1,10 +1,10 @@
 ---
+layout: default
 title: Alabama
-layout: songs
 event: 16th Street Baptist Church Bombing
 category: 16th street baptist
 artist: John Coltrane
-writer:
+writer: John Coltrane
 label:
 producer:
 award1:

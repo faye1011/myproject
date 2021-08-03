@@ -1,9 +1,10 @@
 ---
-layout: songs
+layout: default
 title: Oh, Freedom
 event: March on Washington
 category: March on Washington
 artist: Odetta
+genre:
 writer:
 label:
 producer:

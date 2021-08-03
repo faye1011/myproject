@@ -8,10 +8,13 @@ genre: Folk
 writer:
 label:
 producer:
-award1:
+award1: Grammy for Best Folk Recording by Pete Seeger, 1963
 award2:
 award3:
-released: 1961
+versions: |
+
+released: 1950 by Joe Glazer and the Elm City Four
 video: https://www.youtube.com/embed/nM39QUiAsoM
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellusLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellus
+history: 
+description: Pete Seeger first heard the song sung by Tobacco workers in the late 1940s.  Prior to the Albany movement, the song was majoritly performed within the Southern white folk tradition,until led by Bernice Johnson Reagon, black activists changed the structure and tempo of the song which turned it into a protest song sung at mass gatherings (Ward)
 ---

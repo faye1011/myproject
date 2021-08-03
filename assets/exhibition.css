@@ -1,10 +1,61 @@
 
-
-.container-first {
+.container-one {
   width: 100%;
   margin:auto;  
-  background-color: rgb(46, 46, 46);
+  background-color: black;
   
+}
+
+
+.container-two {
+    width: 90%;
+    margin: auto;
+    padding-left: 70px;
+    padding-right: 70px;
+    color: black;
+    border: solid transparent;
+    border-radius: 5px;
+    height: auto;
+}
+
+
+.container-three {
+    padding: 40px;
+    margin: auto;
+    width: 90%;
+    color: black;
+    
+  
+}
+
+.container-four {
+  
+    color: black;
+    width: 100%;
+    margin: auto;
+    font-weight: 400;
+    font-size: large;
+
+     
+}
+.lyrics{
+    text-align: left;
+    margin: auto;
+    width: 80%;
+    padding-left: 0px;
+}
+
+.container-lyrics {
+    width: 80%;
+    margin: auto;
+}
+.table {
+    width: 80%;
+}
+
+ .container-table   {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .content-first {
@@ -15,20 +66,9 @@ color:white;
 }
 
 
-.container-second {
-width: 80%;
-margin:auto;  
-padding-bottom: 40px;
-    
-}
 
 
-.container-video {
-    width: 80%;
-    margin: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
+
 .title {
     text-align: left;
 
@@ -71,29 +111,34 @@ padding-top: 20px;
     font-size: 3rem;
 }
 
-/* lyrics */
-#lyrics {
-    padding: 30px;
+#coverart {
+    width: 500px;
+    height: 500px;
 }
-.container-lyrics {
-    color: white;
-    background-color: rgb(46, 46, 46);
-    padding: 20px;
-    width: 80%;
-    margin: auto;
-    height: auto;
-    font-weight: 400;
-    font-size: large;
-    box-shadow:3px 3px 10px grey;  
-
-}
-
-.lyric-title {
-    text-align: center;
-}
-
 
 h3 {
     text-align: center;
     padding-bottom: 20px;
+}
+
+
+/* lyrics */
+#lyrics {
+    padding: 30px;
+}
+
+#column-one {
+    padding: 30px;
+}
+
+#column-two {
+    padding: 30px;
+}
+
+button{
+    border: none;
+}
+.col-6 {
+    border-top: solid 1px;
+    border-bottom: solid 1px;
 }

@@ -10,37 +10,40 @@ index: 0
   <div class="container-lyrics ">
     <h3>{{ page.title }}</h3>
     <div class="row">
-      <div class="col-6">
+      <div class="col-6" id="column-one">
         <p>
           Southern trees bear a strange fruit <br>
           Blood on the leaves and blood at the root<br>
           Black bodies swingin' in the Southern breeze<br>
-          Strange fruit hangin' from the poplar trees<br>
+          <button data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample2"> Strange fruit hangin' from the poplar trees</button><br>
           Pastoral scene of the gallant South<br>
           The bulgin' eyes and the twisted mouth<br>
           Scent of magnolias sweet and fresh<br>
           Then the sudden smell of burnin' flesh<br>
           Here is a fruit for the crows to pluck<br>
           For the rain to gather<br>
-          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">  For the wind to suck</button><br>
-          For the sun to rot<br>
+          For the wind to suck<br>
+          <button data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">For the sun to rot </button><br>
           For the tree to drop<br>
           Here is a strange and bitter crop<br>
        </p>   
       </div>
-      <div class="col-6">
-       <div class="collapse multi-collapse" id="multiCollapseExample2">
-        <div class="card card-body">
-          Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
-        </div>
+      <div class="col-6" id="column-two">
+        <h3>Explore the Lyrics</h3>
+       <div class="collapse multi-collapse" id="multiCollapseExample1">
+          Metaphor comparing the lynchings of black Americans to strange fruit hanging from the trees
       </div>
+      <div class="collapse multi-collapse" id="multiCollapseExample2">
+        Heavy loaded words used such as 'rot' to be compared with earlier more gentle images of 'Scent of magnolias sweet and fresh' source: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/StrangeFruit.pdf
+    </div>
       </div>
     </div>
   </div>
   </div>
+
 </div>
- 
- 
+</div>
+
 
 
   

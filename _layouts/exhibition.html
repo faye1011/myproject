@@ -9,8 +9,10 @@ layout: default
 {% for event in site.events %}
     {% if event.category == page.category %} 
 
-<div class="container-first">
+<div class="container-one">
+
   {% include navigation_light.html %}
+
   <div class="content-first">
     <div class="row">
       <div class="title col-lg-6 align-self-center" >
@@ -19,24 +21,21 @@ layout: default
         {% if event.location %} 
            <p class="italic"> <i class="bi bi-geo-alt-fill"></i> {{ event.location }}</p>
            {% endif %}
-           {% if event.date %}
+           {% if event.date%}
            <p class="italic"> <i class="bi bi-calendar-event"></i>   {{ event.date |date_to_long_string }}</p>
            {% endif %}
            
           
 
-           <a data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><h4 style="color: rgb(245, 245, 186)"><em>What happened? <i class="bi bi-caret-down-fill"></i></em></h4></a>
-           <div class="collapse multi-collapse" id="multiCollapseExample1">
-            <div>
+          
          <p>{{ event.description }}
-
-        
-         </p>
-        </div>
-          </div>
-
-           <p class="placeholder"> placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder</p>
+          </p>
+      
+            {% if event.songdesc %}
+           <p class="placeholder">  {{ event.songdesc }}</p>  
+           {% endif %}
          </div>
+        
         <div class="col-lg-6">
         <img src="{{ event.image }}" class="img-fluid" alt="{{ event.title }}">
        </div>
@@ -56,7 +55,7 @@ layout: default
 <!--song -->
 {% for song in site.songs %}
     {% if song.title == page.title %} 
-<div class="container-video"> 
+<div class="container-two"> 
   <div class="container-title">
           <h1><p> {{ song.title }}</p></h1> <h4> <p>{{song.artist}}</p></h>
     <p> read more</p>
@@ -68,48 +67,100 @@ layout: default
       </div>
     </div>
   </div>
+  <!-- table of metadata-->
+  <div class="container-table"></div>
   <div class="col-lg-12">
-       <div class="container-table">
-        <div class="container-sm song-info">
-         
-         <table class="table table-hover">
+       <div class="container-sm song-info">
+         <h5> About Strange Fruit:</h3>
+         <table class="table  table-hover">
             <tbody>
               <tr>
+                {% if song.artist %}
                 <th scope="row">Artist</th>
-                <td>{{ song.artist }}</td>
-              </tr>
-              <tr>
+                 <td>{{ song.artist }}</td>
+              </tr> 
+              {% endif %}
+
+              <tr> 
+                {% if song.released %}
                 <th scope="row">Release Date</th>
-                <td>{{ song.released }}</td>
-              </tr>
+                  <td>{{ song.released }}</td>
+                </tr>
+               {% endif %}
+
               <tr>
+                {% if song.label %}
                 <th scope="row">Label</th>
                 <td>{{ song.label }}</td>
-              </tr>
-              <tr>
+                </tr>
+              {% endif %}
+
+              <tr> 
+                {% if song.genre %}
                 <th scope="row">Genre</th>
                 <td>{{ song.genre }}</td>
-              </tr>
+             </tr>
+              {% endif %}
+
               <tr>
+                {% if song.producer %}
                 <th scope="row">Producer(s)</th>
                 <td>{{ song.producer }}</td>
-              </tr>
+                </tr>
+               {% endif %}
+
               <tr>
+                {% if song.writer %}
                 <th scope="row">Writer(s)</th>
                 <td>{{ song.writer }}</td>
               </tr>
-              <tr>
-                <th scope="row">Version(s)</th>
-                <td>{{ song.versions }}</td>
-              </tr>
+              {% endif %}
             </tbody>
           </table>
-          <div class="description">
+       </div>
+
+<!-- history of song-->
+          {% if song.history %}
+        <div>
+          <h3> History:</h3>
+          <p>{{ song.history }}</p>
+        </div>
+      {% endif %}
+       </div>
+  </div>
+
+
+<!-- lyrics container-->
+<div class=container-four>
+
+
+{{ content }}
+
+<!--- description-->
+
+<div class="container-three">
+  <div class="row row align-items-start gx-5">
+    <div class="title col-lg-6 align-self-center" >
+           <div>
+             <img src="{{ song.coverart }}" id="coverart" class="img-fluid" alt="{{ song.coverartalt }}">
+            </div>
+      </div>
+      <div class="col-lg-6 justify-content-start">
+          
             <p> {{ song.description}}</p>
+              {% if song.versions %}
+              <em>Versions: </em>
+              <p>{{ song.versions }}</p>
+              {% endif %}
+            </tr>
             <p> <i class="bi bi-award-fill"></i> {{ song.award1 }}</p>
             <p> <i class="bi bi-award-fill"></i> {{ song.award2 }}</p>
             <p> <i class="bi bi-award-fill"></i> {{ song.award3 }}</p>
-          </div>
+
+
+    </div>
+      
+    </div>
    
          </div>
       </div>
@@ -127,9 +178,10 @@ layout: default
 
 
 <!-- lyrics container-->
-<div class="lyric-title">
+<div class=container-four>
+<div class="lyrics">
     <h1> Explore the Lyrics </h1>
-    <p>Hover over highlighted lyrics to explore their meaning:</p>
+    <p>Click the highlighted lyrics to explore their meaning:</p>
   
 </div>
 
@@ -138,3 +190,4 @@ layout: default
 {{ content }}
 
 {% include navigation_dark.html %}
+

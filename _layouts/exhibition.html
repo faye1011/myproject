@@ -61,17 +61,15 @@ layout: default
     <p> read more</p>
   </div>
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-8">
       <div class="ratio ratio-16x9">
         <iframe width="560" height="315" src="{{ song.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
-  </div>
   <!-- table of metadata-->
-  <div class="container-table"></div>
-  <div class="col-lg-12">
+  <div class="col-lg-4">
        <div class="container-sm song-info">
-         <h5> About Strange Fruit:</h3>
+         
          <table class="table  table-hover">
             <tbody>
               <tr>
@@ -118,7 +116,8 @@ layout: default
             </tbody>
           </table>
        </div>
-
+  </div>
+  </div>
 <!-- history of song-->
           {% if song.history %}
         <div>
@@ -176,18 +175,6 @@ layout: default
   
 </div>
 
-
-<!-- lyrics container-->
-<div class=container-four>
-<div class="lyrics">
-    <h1> Explore the Lyrics </h1>
-    <p>Click the highlighted lyrics to explore their meaning:</p>
-  
-</div>
-
-
-
-{{ content }}
 
 {% include navigation_dark.html %}
 

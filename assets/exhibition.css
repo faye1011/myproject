@@ -10,12 +10,13 @@
 .container-two {
     width: 90%;
     margin: auto;
-    padding-left: 70px;
-    padding-right: 70px;
-    color: black;
-    border: solid transparent;
-    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    color: aliceblue;
+    border-radius: 2px;
     height: auto;
+    background-color: black;
 }
 
 
@@ -23,26 +24,20 @@
     padding: 40px;
     margin: auto;
     width: 90%;
-    color: black;
+    color: aliceblue;
+    background-color: black;
     
   
 }
 
 .container-four {
-  
     color: black;
     width: 100%;
-    margin: auto;
-    font-weight: 400;
+    justify-content: start;
+    font-weight: 500;
     font-size: large;
 
-     
-}
-.lyrics{
-    text-align: left;
-    margin: auto;
-    width: 80%;
-    padding-left: 0px;
+     font-family:'Courier New', Courier, monospace;
 }
 
 .container-lyrics {
@@ -51,6 +46,7 @@
 }
 .table {
     width: 80%;
+    color: aliceblue;
 }
 
  .container-table   {
@@ -100,7 +96,7 @@ color:white;
 
 
 .container-table {
-padding-top: 20px;
+padding-top: 5px;
 }
 
 .description {

@@ -12,7 +12,7 @@ layout: default
 <div class="container-one">
 
   {% include navigation_light.html %}
-
+<!-- event description -->
   <div class="content-first">
     <div class="row">
       <div class="title col-lg-6 align-self-center" >
@@ -35,13 +35,18 @@ layout: default
            <p class="placeholder">  {{ event.songdesc }}</p>  
            {% endif %}
          </div>
-        
+    <!-- event image-->
         <div class="col-lg-6">
         <img src="{{ event.image }}" class="img-fluid" alt="{{ event.title }}">
-       </div>
+        {% if event.imgsource %}
+       <em><p>{{ event.imgsource }}</p></em>
+       {% endif %}
+      
+      </div>
+      
     </div>
-    <div class="down-arrow">
-      <p> <i class="bi bi-chevron-down" id="arrow"></i></p>
+   <div class="down-arrow">
+      <p> <a class="nav-link" href="#scrollspyHeading1"><i class="bi bi-chevron-down" id="arrow-down"></i></a></p>
   </div>
       {% else %}
     {% continue %}
@@ -57,7 +62,7 @@ layout: default
     {% if song.title == page.title %} 
 <div class="container-two"> 
   <div class="container-title">
-          <h1><p> {{ song.title }}</p></h1> <h4> <p>{{song.artist}}</p></h>
+          <h1 id="scrollspyHeading1"><p> {{ song.title }}</p></h1> <h4> <p>{{song.artist}}</p></h>
     <p> read more</p>
   </div>
   <div class="row">
@@ -135,6 +140,7 @@ layout: default
 
 {{ content }}
 
+</div>
 <!--- description-->
 
 <div class="container-three">

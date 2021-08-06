@@ -1,5 +1,5 @@
 ---
-layout: events
+
 title: Montgomery Bus Boycott
 year: 1955
 category: montgomery bus boycott

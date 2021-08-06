@@ -1,5 +1,5 @@
 ---
-layout: events
+
 title: March on Washington
 category: march on washington
 year: 1963

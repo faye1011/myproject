@@ -18,8 +18,14 @@ li, ul {
     font-size: 1rem;
 }
 nav {
-    background-color: black;
+    background-color: black 
 }
+
+/* to override the default bootstrap colour of the navbar */
 .navbar {
-    background-color: black;
+    background-color: black !important;
+}
+
+.nav-item {
+    padding-right: 20px;
 }

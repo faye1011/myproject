@@ -1,5 +1,5 @@
 ---
-layout: events
+
 title: Freedom Rides
 category: freedom rides
 year: 1961

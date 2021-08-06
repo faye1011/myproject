@@ -1,8 +1,8 @@
 .page-title {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 20px;
-    border-bottom: solid 2px black;
+
 
 }
 
@@ -16,8 +16,8 @@
 }
 .card{
     padding: 10px;
-    
     border-radius: 0;
+    background-color: black !important;
 }
 a {
     text-decoration: none;

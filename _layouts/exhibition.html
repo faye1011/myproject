@@ -12,7 +12,7 @@ layout: default
 <div class="container-one">
 
   {% include navigation_light.html %}
-
+<!-- event description -->
   <div class="content-first">
     <div class="row">
       <div class="title col-lg-6 align-self-center" >
@@ -35,13 +35,18 @@ layout: default
            <p class="placeholder">  {{ event.songdesc }}</p>  
            {% endif %}
          </div>
-        
+    <!-- event image-->
         <div class="col-lg-6">
         <img src="{{ event.image }}" class="img-fluid" alt="{{ event.title }}">
-       </div>
+        {% if event.imgsource %}
+       <em><p>{{ event.imgsource }}</p></em>
+       {% endif %}
+      
+      </div>
+      
     </div>
-    <div class="down-arrow">
-      <p> <i class="bi bi-chevron-down" id="arrow"></i></p>
+   <div class="down-arrow">
+      <p> <a class="nav-link" href="#scrollspyHeading1"><i class="bi bi-chevron-down" id="arrow-down"></i></a></p>
   </div>
       {% else %}
     {% continue %}
@@ -57,21 +62,19 @@ layout: default
     {% if song.title == page.title %} 
 <div class="container-two"> 
   <div class="container-title">
-          <h1><p> {{ song.title }}</p></h1> <h4> <p>{{song.artist}}</p></h>
+          <h1 id="scrollspyHeading1"><p> {{ song.title }}</p></h1> <h4> <p>{{song.artist}}</p></h>
     <p> read more</p>
   </div>
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-8">
       <div class="ratio ratio-16x9">
         <iframe width="560" height="315" src="{{ song.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
-  </div>
   <!-- table of metadata-->
-  <div class="container-table"></div>
-  <div class="col-lg-12">
+  <div class="col-lg-4">
        <div class="container-sm song-info">
-         <h5> About Strange Fruit:</h3>
+         
          <table class="table  table-hover">
             <tbody>
               <tr>
@@ -118,7 +121,8 @@ layout: default
             </tbody>
           </table>
        </div>
-
+  </div>
+  </div>
 <!-- history of song-->
           {% if song.history %}
         <div>
@@ -136,6 +140,7 @@ layout: default
 
 {{ content }}
 
+</div>
 <!--- description-->
 
 <div class="container-three">
@@ -176,18 +181,6 @@ layout: default
   
 </div>
 
-
-<!-- lyrics container-->
-<div class=container-four>
-<div class="lyrics">
-    <h1> Explore the Lyrics </h1>
-    <p>Click the highlighted lyrics to explore their meaning:</p>
-  
-</div>
-
-
-
-{{ content }}
 
 {% include navigation_dark.html %}
 

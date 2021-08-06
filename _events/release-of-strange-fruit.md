@@ -1,5 +1,4 @@
 ---
-layout: events
 category: release of strange fruit
 title: Release of Strange Fruit
 year: 1939

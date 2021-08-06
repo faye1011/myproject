@@ -11,8 +11,18 @@ layout: default
 <div class="row row-cols-1 row-cols-md-3 g-4 p-5"> 
   {% for event in events_by_year %}
   <div class="col mb-3">
-   
-    <a href="{{event.url}}"> 
+
+    {% for page in site.page %}
+    {% if page.category == event.category %} 
+     {% assign eventurl = page.url %}
+{% endif %}
+
+{% endfor %}
+    
+    <a href="{{ eventurl.url}}"> 
+
+
+
     <div class="card text-white bg-dark mb-3 mb-3" style="width: 100%;">
       <img src="{{ event.image }}" class="card-img-top" alt="{{ event.title }}" height="300px">
       <div class="card-body">

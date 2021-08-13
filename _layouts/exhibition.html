@@ -147,40 +147,57 @@ layout: default
   <div class="row row align-items-start gx-5">
     <div class="title col-lg-6 align-self-center" >
            <div>
-             <img src="{{ song.coverart }}" id="coverart" class="img-fluid" alt="{{ song.coverartalt }}">
+             <img src="{{ song.coverart }}" id="coverart" class="img-fluid" alt="{{ song.coverart-description}}">
             </div>
+          <p>{{ song.coverart-description }}</p>
+           
+            
       </div>
       <div class="col-lg-6 justify-content-start">
-          
+          <h3> About {{ song.title }}:</h3>
+          {% if song.description %}
             <p> {{ song.description}}</p>
+            {% endif %}
               {% if song.versions %}
               <em>Versions: </em>
               <p>{{ song.versions }}</p>
               {% endif %}
             </tr>
+            {% if song.image %}
+            <div>
+              <img src="{{ song.image }}" id="image" class="img-fluid" alt="{{ song.image-description}}">
+             </div>
+             {% endif %}
+
+             {% if song.image-description %}
+             <p> {{ song.image-description }} </p>
+             {% endif %}
             <p> <i class="bi bi-award-fill"></i> {{ song.award1 }}</p>
             <p> <i class="bi bi-award-fill"></i> {{ song.award2 }}</p>
             <p> <i class="bi bi-award-fill"></i> {{ song.award3 }}</p>
-
-
+            <p> recommendation of sources:</p>
+  
     </div>
-      
+    
     </div>
-   
+
          </div>
+         
       </div>
     </div>
+     {% include navigation_dark.html %}
+  
   </div>
   {% else %}
   {% continue %}
     {% endif %}
   {% endfor %}
+ 
 </div>
 
 
-  
 </div>
 
 
-{% include navigation_dark.html %}
+
 

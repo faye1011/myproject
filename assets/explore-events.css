@@ -1,9 +1,20 @@
 .page-title {
     text-align: center;
     padding-top: 60px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 
 
+}
+.h4{
+    font-size: small;
+}
+.container-one {
+    width: 90%;
+    margin: auto;
+}
+.page-title {
+    background-color: black;
+    color: aliceblue;
 }
 
 .card-title {

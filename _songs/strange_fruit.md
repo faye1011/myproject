@@ -14,7 +14,7 @@ writer: Abel Meeropol
 released: 1939
 video: https://www.youtube.com/embed/-DGY9HvChXk
 coverart: media/images/cover-art/strange_fruit_cover_art.jpg
-coverartalt: Billie Holiday Strange Fruit Cover Art
+coverart-description: Cover of Strange Fruit
 versions: | 
     Abel Meeropol (1939), </br>
     Kanye West (date)

@@ -6,39 +6,40 @@ layout: default
 
 <div class="page-title">
     <h1> {{ page.title }}</h1>
+<p> Explore music through the events</p>
 </div>
-{% assign events_by_year = site.events | sort: "year" %}
-<div class="row row-cols-1 row-cols-md-3 g-4 p-5"> 
-  {% for event in events_by_year %}
-  <div class="col mb-3">
-
-    {% for page in site.page %}
-    {% if page.category == event.category %} 
-     {% assign eventurl = page.url %}
-{% endif %}
-
-{% endfor %}
-    
-    <a href="{{ eventurl.url}}"> 
 
 
+<div class="container-one">
 
-    <div class="card text-white bg-dark mb-3 mb-3" style="width: 100%;">
-      <img src="{{ event.image }}" class="card-img-top" alt="{{ event.title }}" height="300px">
-      <div class="card-body">
-        <h5 class="card-title">{{event.title}}</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  {% assign events_by_year = site.events | sort: "year" %}
+  <div class="row row-cols-1 row-cols-md-3 g-4 p-5"> 
+    {% for event in events_by_year %}
+    <div class="col mb-3">
+
+      {% for page in site.page %}
+      {% if page.category == event.category %} 
+      {% assign eventurl = page.url %}
+  {% endif %}
+
+  {% endfor %}
+
+      
+      <a href="{{ eventurl.url}}"> 
+
+
+      <div class="card text-white bg-dark mb-3 mb-3" style="width: 100%;">
+        <img src="{{ event.image }}" class="card-img-top" alt="{{ event.title }}" height="300px">
+        <div class="card-body">
+          <h5 class="card-title">{{event.year}}</h5>
+          <h5 class="card-title"> {{ event.title }}</h5>
+        </div>
+       <p> click here</p>
       </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-      </ul>
-      <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-      </div>
+       </a>
+
     </div>
-  </div>
-  {% endfor %}  
-</div> 
-</a>
+    {% endfor %}  
+  </div> 
+  </a>
+</div>

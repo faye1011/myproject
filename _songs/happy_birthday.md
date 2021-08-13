@@ -8,6 +8,8 @@ writer: Stevie Wonder
 label: Motown
 genre: Pop, R&B
 producer: Stevie Wonder
+coverart: media/images/cover-art/hbd_coverart.jpg
+coverart-description:
 award1:
 award2:
 award3:

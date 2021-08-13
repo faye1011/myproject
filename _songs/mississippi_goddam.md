@@ -7,6 +7,8 @@ artist: Nina Simone
 genre: R&B
 producer: Hal Mooney
 label: Philips Records
+coverart: media/images/cover-art/mississippigoddam_coverart.jpg
+coverart-description:
 award1:
 award2:
 award3:

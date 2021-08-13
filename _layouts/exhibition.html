@@ -66,10 +66,21 @@ layout: default
     <p> read more</p>
   </div>
   <div class="row">
+
+    <!-- video of the song -->
     <div class="col-lg-8">
+      {% if song.video %}
       <div class="ratio ratio-16x9">
-        <iframe width="560" height="315" src="{{ song.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="auto" src="{{ song.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
+      {% endif %}
+
+<!-- soundcloud version of song -->
+      {% if song.soundcloud %}
+      <div>
+      <iframe width="80%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="{{ song.soundcloud }}"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="{{song.soundcloud-artist}}" title="{{song.artist}}" target="_blank" style="color: #cccccc; text-decoration: none;">{{song.artist}}</a> · <a href=" {{ song.soundcloudsource }}" title="{{ song.title }}" target="_blank" style="color: #cccccc; text-decoration: none;">{{ song.title }}</a></div>
+    </div>
+    {% endif %}
     </div>
   <!-- table of metadata-->
   <div class="col-lg-4">

@@ -26,18 +26,17 @@
     width: 90%;
     color: aliceblue;
     background-color: black;
+
     
   
 }
-
 .container-four {
     color: black;
     width: 100%;
     justify-content: start;
     font-weight: 500;
     font-size: large;
-
-     font-family:'Courier New', Courier, monospace;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .container-lyrics {
@@ -115,7 +114,11 @@ padding-top: 20px;
 #arrow-down:hover {
     color: rgb(141, 141, 121)
 }
-
+.coverart{ 
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
 #coverart {
     width: 500px;
     height: 500px;

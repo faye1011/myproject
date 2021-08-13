@@ -6,12 +6,19 @@ body {
 }
 
 .page-title {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background-color: black;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    border-bottom: solid 2px black;
-
+    color: aliceblue;
+    
+    
 }
+
+.list-group-item {
+    padding: 10px;
+}
+
 .row {
     background-color:rgb(255, 255, 247);
 }

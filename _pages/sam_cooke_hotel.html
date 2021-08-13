@@ -8,10 +8,9 @@ index: 5
 
   
 <div class="container-fluid" id="lyrics">
-  <div class="container-lyrics"></div>
-    <h3>{{ page.title }}</h3>
-    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-4">
-      <div class="col">
+  <div class="container-lyrics">
+    <div class="row">
+      <div class="col-6" id="column-one">
         <p>
           I was born by the river, in a little tent <br>
           Oh, and just like the river<br>
@@ -22,11 +21,6 @@ index: 5
           Oh, yes it will<br>
           It's been too hard living<br>
           But I'm afraid to die<br>
-       </p>   
-      </div>
-
-      <div class="col">
-        <p>
           'Cause I don't know what's up there<br>
           Beyond the sky<br>
           It's been a long<br>
@@ -36,30 +30,16 @@ index: 5
           I go to the movie<br>
           And I go downtown<br>
           Somebody keep telling me<br>
-          </p>
-      </div>
-
-      <div class="col">
-        <p>
+       
           Don't hang around<br>
           It's been a long<br>
           A long time coming<br>
           But I know, a change gonna come<br>
           Oh, yes it will<br>
-         <a class="btn btn-light btn-md" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"> Then I go to my brother</a><br>
+         Then I go to my brother<br>
           And I say, brother, help me please<br>
           But he winds up, knockin' me<br>
           Back down on my knees<br> 
-          </p>
-              <div class="collapse multi-collapse" id="multiCollapseExample1">
-              <div class="card card-body">
-            Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
-          </div>
-      </div>
-    </div>
-
-      <div class="col">
-          <p>
           Oh, there been times that I thought<br>
           I couldn't last for long<br>
           But now I think I'm able, to carry on<br>
@@ -69,7 +49,17 @@ index: 5
           Oh, yes it will <br>
           </p>
       </div>
-    </div>
+          <div class="col-6" id="column-two">
+            <h3 type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample1"> <i class="bi bi-arrow-left" id="arrow"></i>Click on the highlighted lyrics to explore</h3>
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                  Metaphor comparing the lynchings of black Americans to strange fruit hanging from the trees
+        </div>
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                Heavy loaded words used such as 'rot' to be compared with earlier more gentle images of 'Scent of magnolias sweet and fresh' source: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/StrangeFruit.pdf
+   
+   </div>
+          </div>
+     </div>
   </div>
 </div>
 </div>

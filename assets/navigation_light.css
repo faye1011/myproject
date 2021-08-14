@@ -3,12 +3,23 @@
   
    
 }
+
+
 .button-next {
     float: right;
    
 }
-.navigation {
-    width: 80%;
-    margin: auto;
+
+a {
+    color: white;
+    font-size: large;
 }
 
+
+
+
+.navigation {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+}

@@ -1,5 +1,4 @@
 ---
-
 title: 16th Street Baptist Church Bombing
 year: 1963
 location: Birmingham, Alabama

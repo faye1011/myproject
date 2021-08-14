@@ -63,7 +63,7 @@ layout: default
 <div class="container-two"> 
     <div class="container-title">
             <h1 id="scrollspyHeading1"><p> {{ song.title }}</p></h1> <h4> <p>{{song.artist}}</p></h>
-      <p> read more</p>
+    
     </div>
     <div class="row">
 
@@ -187,10 +187,10 @@ layout: default
                   </div>
                 </div>
                 
-                {% endif %}
+               
               </div>     
-  
-  
+   {% endif %}
+    </div>
 
       <!-- second column -->
     <div class="col-lg-6 justify-content-start">
@@ -241,10 +241,7 @@ layout: default
       </div>
     </div>
   </div>
-  
-    
-  
-  </div>
+
   {% else %}
   {% continue %}
     {% endif %}
@@ -253,7 +250,7 @@ layout: default
 
   <!-- lyrics container-->
 
-</div>
+
  {% include navigation_dark.html %}
 
 </div>

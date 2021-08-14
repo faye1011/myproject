@@ -54,155 +54,195 @@ layout: default
   {% endfor %} 
 </div>
 </div>
-
+<!-- end of event-->
 
 
 <!--song -->
 {% for song in site.songs %}
     {% if song.title == page.title %} 
 <div class="container-two"> 
-  <div class="container-title">
-          <h1 id="scrollspyHeading1"><p> {{ song.title }}</p></h1> <h4> <p>{{song.artist}}</p></h>
-    <p> read more</p>
-  </div>
-  <div class="row">
+    <div class="container-title">
+            <h1 id="scrollspyHeading1"><p> {{ song.title }}</p></h1> <h4> <p>{{song.artist}}</p></h>
+      <p> read more</p>
+    </div>
+    <div class="row">
 
-    <!-- video of the song -->
-    <div class="col-lg-8">
-      {% if song.video %}
-      <div class="ratio ratio-16x9">
-        <iframe width="560" height="auto" src="{{ song.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- video of the song -->
+      <div class="col-lg-8">
+        {% if song.video %}
+        <div class="ratio ratio-16x9">
+          <iframe width="560" height="auto" src="{{ song.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        {% endif %}
+
+  <!-- soundcloud version of song -->
+        {% if song.soundcloud %}
+        <div>
+        <iframe width="100%" style="margin:auto" height="400" scrolling="no" frameborder="no" allow="autoplay" src="{{ song.soundcloud }}"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="{{song.soundcloud-artist}}" title="{{song.artist}}" target="_blank" style="color: #cccccc; text-decoration: none;">{{song.artist}}</a> · <a href=" {{ song.soundcloudsource }}" title="{{ song.title }}" target="_blank" style="color: #cccccc; text-decoration: none;">{{ song.title }}</a></div>
       </div>
       {% endif %}
+      </div>
+    <!-- table of metadata-->
+    <div class="col-lg-4">
+        <div class="container-sm song-info">
+          
+          <table class="table  table-hover">
+              <tbody>
+                <tr>
+                  {% if song.artist %}
+                  <th scope="row">Artist</th>
+                  <td>{{ song.artist }}</td>
+                </tr> 
+                {% endif %}
 
-<!-- soundcloud version of song -->
-      {% if song.soundcloud %}
-      <div>
-      <iframe width="80%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="{{ song.soundcloud }}"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="{{song.soundcloud-artist}}" title="{{song.artist}}" target="_blank" style="color: #cccccc; text-decoration: none;">{{song.artist}}</a> · <a href=" {{ song.soundcloudsource }}" title="{{ song.title }}" target="_blank" style="color: #cccccc; text-decoration: none;">{{ song.title }}</a></div>
-    </div>
-    {% endif %}
-    </div>
-  <!-- table of metadata-->
-  <div class="col-lg-4">
-       <div class="container-sm song-info">
-         
-         <table class="table  table-hover">
-            <tbody>
-              <tr>
-                {% if song.artist %}
-                <th scope="row">Artist</th>
-                 <td>{{ song.artist }}</td>
-              </tr> 
-              {% endif %}
+                <tr> 
+                  {% if song.released %}
+                  <th scope="row">Release Date</th>
+                    <td>{{ song.released }}</td>
+                  </tr>
+                {% endif %}
 
-              <tr> 
-                {% if song.released %}
-                <th scope="row">Release Date</th>
-                  <td>{{ song.released }}</td>
-                </tr>
-               {% endif %}
+                <tr>
+                  {% if song.label %}
+                  <th scope="row">Label</th>
+                  <td>{{ song.label }}</td>
+                  </tr>
+                {% endif %}
 
-              <tr>
-                {% if song.label %}
-                <th scope="row">Label</th>
-                <td>{{ song.label }}</td>
-                </tr>
-              {% endif %}
-
-              <tr> 
-                {% if song.genre %}
-                <th scope="row">Genre</th>
-                <td>{{ song.genre }}</td>
-             </tr>
-              {% endif %}
-
-              <tr>
-                {% if song.producer %}
-                <th scope="row">Producer(s)</th>
-                <td>{{ song.producer }}</td>
-                </tr>
-               {% endif %}
-
-              <tr>
-                {% if song.writer %}
-                <th scope="row">Writer(s)</th>
-                <td>{{ song.writer }}</td>
+                <tr> 
+                  {% if song.genre %}
+                  <th scope="row">Genre</th>
+                  <td>{{ song.genre }}</td>
               </tr>
-              {% endif %}
-            </tbody>
-          </table>
-       </div>
-  </div>
-  </div>
-<!-- history of song-->
-          {% if song.history %}
-        <div>
-          <h3> History:</h3>
-          <p>{{ song.history }}</p>
+                {% endif %}
+
+                <tr>
+                  {% if song.producer %}
+                  <th scope="row">Producer(s)</th>
+                  <td>{{ song.producer }}</td>
+                  </tr>
+                {% endif %}
+
+                <tr>
+                  {% if song.writer %}
+                  <th scope="row">Writer(s)</th>
+                  <td>{{ song.writer }}</td>
+                </tr>
+                {% endif %}
+              </tbody>
+            </table>
         </div>
-      {% endif %}
-       </div>
+      </div>
+    </div>
+
+        
   </div>
+  <div class=container-four>
+
+    {{ content }}
+    
+    </div>
 
 
-<!-- lyrics container-->
-<div class=container-four>
-
-
-{{ content }}
-
-</div>
 <!--- description-->
 
 <div class="container-three">
   <div class="row row align-items-start gx-5">
-    <div class="title col-lg-6 align-self-center" >
-           <div>
-             <img src="{{ song.coverart }}" id="coverart" class="img-fluid" alt="{{ song.coverart-description}}">
-            </div>
-            <div>
-              <img src="{{ song.coverart2 }}" id="coverart" class="img-fluid" alt="{{ song.coverart-description}}">
-             </div>
-
-
-
-          <p>{{ song.coverart-description }}</p>
+    <!-- first column -->
+    <div class="col-lg-6 align-self-center">
+            <h3> About {{ song.title }}:</h3>
            
-            
-      </div>
-      <div class="col-lg-6 justify-content-start">
-          <h3> About {{ song.title }}:</h3>
-          {% if song.description %}
-            <p> {{ song.description}}</p>
-            {% endif %}
-              {% if song.versions %}
-              <em>Versions: </em>
-              <p>{{ song.versions }}</p>
-              {% endif %}
-            </tr>
-            {% if song.image %}
-            <div>
-              <img src="{{ song.image }}" id="image" class="img-fluid" alt="{{ song.image-description}}">
-             </div>
-             {% endif %}
-
-             {% if song.image-description %}
-             <p> {{ song.image-description }} </p>
-             {% endif %}
-            <p> <i class="bi bi-award-fill"></i> {{ song.award1 }}</p>
-            <p> <i class="bi bi-award-fill"></i> {{ song.award2 }}</p>
-            <p> <i class="bi bi-award-fill"></i> {{ song.award3 }}</p>
-            <p> recommendation of sources:</p>
-  
-    </div>
+              <p> {{ song.description}}</p>
+              
+                {% if song.versions %}
+                <em>Versions: </em>
+                <p>{{ song.versions }}</p>
+                {% endif %}
+              
+              <p> <i class="bi bi-award-fill"></i> {{ song.award1 }}</p>
+              <p> <i class="bi bi-award-fill"></i> {{ song.award2 }}</p>
+              <p> <i class="bi bi-award-fill"></i> {{ song.award3 }}</p>
+              <p> recommendation of sources:</p>
     
-    </div>
+  
+  <!--- Modals for images-->
+              {% if song.image %}
+              <button data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div>
+                  <img src="{{ song.image }}" id="image" class="img-fluid" alt="{{ song.image-description}}">
+               </div> 
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-lg modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+    
+                    <div class="modal-body">
+                      <img src="{{ song.image }}" id="image" class="img-fluid" width="100%" height="100%" alt="{{ song.image-description}}">
+                    </div>
+                    <div class="modal-footer">
+                      <p> {{ song.image-description }}</p>
+                    </div>
+                  </div>
+                </div>
+                
+                {% endif %}
+              </div>     
+  
+  
 
-         </div>
-         
+      <!-- second column -->
+    <div class="col-lg-6 justify-content-start">
+
+            <!-- Button(image) trigger modal -->
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                <div class="coverart-image">
+                <img src="{{ song.coverart }}" id="coverart" class="img-fluid" alt="{{ song.coverart-description}}">
+              </div>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-lg modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="{{ song.coverart }}" id="coverart" class="img-fluid" alt="{{ song.coverart-description}}">
+                  </div>
+                  <div class="modal-footer">
+                    {{ song.coverart-description }}
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+          <!-- Button(image) trigger modal -->
+          <button  data-bs-toggle="modal" data-bs-target="#exampleModal3">
+              <div class="coverart-image">
+                <img src="{{ song.coverart2 }}" id="coverart" class="img-fluid" alt="{{ song.coverart-description}}">
+              </div>
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-lg modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <img src="{{ song.coverart2 }}" id="coverart" class="img-fluid" alt="{{ song.coverart-description}}">
+                </div>
+                <div class="modal-footer">
+                  {{ song.coverart2-description }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-     {% include navigation_dark.html %}
+  </div>
+  
+    
   
   </div>
   {% else %}
@@ -210,8 +250,11 @@ layout: default
     {% endif %}
   {% endfor %}
  
-</div>
 
+  <!-- lyrics container-->
+
+</div>
+ {% include navigation_dark.html %}
 
 </div>
 

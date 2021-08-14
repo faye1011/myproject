@@ -65,3 +65,5 @@ collections:
     output: true 
   artists:
     output: true
+  objects:
+    output: true

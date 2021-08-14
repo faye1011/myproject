@@ -15,7 +15,7 @@
     <div class="button-prev">
         <button type="button" class="btn btn-sm">
         {% if prev_page %}
-            <a href="{{ prev_page.url }}"> <i class="bi bi-caret-left"></i>{{prev_page.category}}</a>
+            <a href="{{ prev_page.url }}"> <i class="bi bi-caret-left"></i>Previous</a>
         {% endif %}
         </button>
     </div>
@@ -23,7 +23,7 @@
     <div class="button-next">
         <button type="button" class="btn btn-sm">
         {% if next_page %}
-            <a href="{{ next_page.url }}"> {{next_page.category}} <i class="bi bi-caret-right"></i></a>
+            <a href="{{ next_page.url }}"> <i class="bi bi-caret-right"></i>Next</a>
         {% endif %}
         </button>
     

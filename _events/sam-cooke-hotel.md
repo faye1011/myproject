@@ -1,5 +1,4 @@
 ---
-
 title: Sam Cooke Turned Away From Hotel
 category: sam cooke hotel
 year: 1963

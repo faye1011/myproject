@@ -7,6 +7,7 @@
 }
 
 
+
 .container-two {
     width: 90%;
     margin: auto;
@@ -27,26 +28,48 @@
     color: aliceblue;
     background-color: black;
 
-
-    
   
 }
 .container-four {
+    
     color: black;
-    width: 100%;
-    justify-content: start;
+    background-color: white;
+    width: auto;
+    margin: auto;
     font-weight: 600;
     font-size: large;
-    font-family:'Courier New', Courier, monospace;
-  
+    float: center;
+   
+    
+}
+.lyric-button{
+
+background-color: white;
+width: auto;
+margin: auto;
+text-align: center;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+#lyric-button{
+font-size: x-large;
+background-color: rgb(255, 255, 174);
+color: black;
+border: none;
+}
+
+.modal-body {
+    margin: auto;
+
 }
 .highlight-lyric {
     font-weight: 600;
     border: none;
     background-color: rgb(255, 255, 174);
 }
-.collapse{ 
-    color: rgb(117, 115, 98);
+.collapse { 
+    color: rgb(49, 49, 47);
+    padding-bottom: 40px;
 }
 
 

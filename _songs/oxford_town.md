@@ -8,8 +8,10 @@ writer: Bob Dylan
 genre: Folk
 label: Columbia Records
 producer:  Bob Dylan
+#object relating to song and metadata
 image: /media/images/broadside_issue_14.jpg
 image-description: Broadside Magazine, issue 14
+#end of object metadata
 award1:
 award2:
 award3:

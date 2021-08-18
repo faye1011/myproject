@@ -2,6 +2,7 @@
 category: release of strange fruit
 title: Release of Strange Fruit
 year: 1939
+duration:
 image: media/images/events/release_of_strange_fruit.jpg
 image-caption: 
 description: Strange Fruit is orginally a poem by Abel Meeropol called 'Bitter Fruit' which he wrote after seeing a photograph of the lynching of Tom Shipp and Abe Smith in Marion, Indiana. (watermark source)

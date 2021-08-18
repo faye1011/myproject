@@ -22,8 +22,8 @@ layout: default
         {% if event.location %} 
            <p class="italic"> <i class="bi bi-geo-alt-fill"></i> {{ event.location }}</p>
            {% endif %}
-           {% if event.date%}
-           <p class="italic"> <i class="bi bi-calendar-event"></i>   {{ event.date |date_to_long_string }}</p>
+           {% if event.duration %}
+           <p class="italic"> <i class="bi bi-calendar-event"></i>   {{ event.duration }}</p>
            {% endif %}
            
           

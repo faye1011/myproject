@@ -1,5 +1,3 @@
----
-image:  media/images/broadside_issue_14.jpg  
 title:
 subject:
 description:
@@ -16,4 +14,3 @@ relation:
 coverage:
 rights:
 index:
----

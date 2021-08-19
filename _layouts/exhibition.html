@@ -181,10 +181,13 @@ layout: default
               <p> <i class="bi bi-award-fill"></i> {{ song.award3 }}</p>
                 {% endif %}
               <p> recommendation of sources:</p>
-    
+     {% else %}
+    {% continue %}
+      {% endif %}
+    {% endfor %}
   
-  <!--- Modals for images-->
-              {% if song.image %}
+  <!--- Modals for extra images-->
+              
               <button data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div>
                   <img src="{{ song.image }}" id="image" class="img-fluid" alt="{{ song.image-description}}">
@@ -202,11 +205,11 @@ layout: default
               
                   </div>
                 </div>
-                
-               
               </div>     
-   {% endif %}
-    </div>
+   </div>
+
+  {% for object in site.objects %}
+   {% if object.title == page.title %}
 
       <!-- second column / cover art modals -->
     <div class="col-lg-6 justify-content-start">
@@ -214,7 +217,7 @@ layout: default
             <!-- Button(image) trigger modal -->
             <button data-bs-toggle="modal" data-bs-target="#exampleModal2">
                 <div class="coverart-image">
-                <img src="{{ song.coverart }}" id="coverart" class="img-fluid" alt="{{ song.coverart-description}}">
+                <img src="{{ object.image }}" id="coverart" class="img-fluid" alt="{{ object.description}}">
               </div>
             </button>
 
@@ -224,65 +227,65 @@ layout: default
                 <div class="modal-content">
                   <div class="modal-body">
                     <div class="modal-ca">
-                    <img src="{{ song.coverart }}" id="coverart" class="img-fluid" alt="{{ song.coverart-description}}">
+                    <img src="{{ object.image }}" id="coverart" class="img-fluid" alt="{{ object.description}}">
                     </div>
                     <table class="table" id="ca-metadata">
                       <tbody>
                         <tr>
                           <th scope="row">Title</th>
-                          <td>{{ song.ca-title }}</td>
+                          <td>{{ object.title }}</td>
                         </tr> 
                         <tr> 
                           <th scope="row">Description</th>
-                            <td>{{ song.ca-description }}</td>
+                            <td>{{ object.description }}</td>
                           </tr>
                         <tr>
                           <th scope="row">Creator</th>
-                          <td>{{ song.Creator }}</td>
+                          <td>{{ object.creator }}</td>
                           </tr>
                         <tr> 
                           <th scope="row">Publisher</th>
-                          <td>{{ song.Publisher }}</td>
+                          <td>{{ object.publisher }}</td>
                       </tr>
                         <tr>
                           <th scope="row">Contributor</th>
-                          <td>{{ song.Contributor }}</td>
+                          <td>{{ object.contributor }}</td>
                         </tr>
                         <tr>
                           <th scope="row">Date</th>
-                          <td>{{ song.ca-date }}</td>
+                          <td>{{ object.year }}</td>
                         </tr>
                         <tr>
                           <th scope="row">Type</th>
-                          <td>{{ song.Type }}</td>
+                          <td>{{ object.type }}</td>
                         </tr>
                         <tr>
                           <th scope="row">Format</th>
-                          <td>{{ song.Format }}</td>
+                          <td>{{ object.format }}</td>
                         </tr>
                         <tr>
                           <th scope="row">Identifier</th>
-                          <td>{{ song.Indentifier }}</td>
+                          <td>{{ object.indentifier }}</td>
                         </tr>
                         <tr>
                           <th scope="row">Source</th>
-                          <td>{{ song.Source }}</td>
+                          <td>{{ object.source }}</td>
                         </tr>
                         <tr>
                           <th scope="row">Language</th>
-                          <td>{{ song.Language}}</td>
+                          <td>{{ object.language}}</td>
                         </tr>
                         <tr>
                           <th scope="row">Relation</th>
-                          <td>{{ song.Relation }}</td>
+                          <td>{{ object.relation }}</td>
                         </tr>
                         <tr>
                           <th scope="row">Coverage</th>
-                          <td>{{ song.Coverage }}</td>
+                          <td>{{ object.coverage }}</td>
                         </tr>
                         <tr>
                           <th scope="row">Rights</th>
-                          <td>{{ song.Rights }}</td>
+                          <td>{{ object.rights }}</td>
                         </tr>
                       </tbody>
                     </table>
@@ -290,13 +293,14 @@ layout: default
                   
                 </div>
               </div>
+              
           </div>
 
 
           <!-- Button(image) trigger modal -->
           <button  data-bs-toggle="modal" data-bs-target="#exampleModal3">
               <div class="coverart-image">
-                <img src="{{ song.coverart2 }}" id="coverart" class="img-fluid" alt="{{ song.coverart-description}}">
+                <img src="{{ object.image2 }}" id="coverart" class="img-fluid" alt="{{ object.description}}">
               </div>
           </button>
 
@@ -306,7 +310,7 @@ layout: default
               <div class="modal-content">
                 <div class="modal-body">
                   <div class ="coverart">
-                    <img src="{{ song.coverart2 }}" id="coverart" class="img-fluid" alt="{{ song.ca-description}}">
+                    <img src="{{ object.image2 }}" id="coverart" class="img-fluid" alt="{{ object.description}}">
                   </div>
                   
                 </div>
@@ -315,16 +319,15 @@ layout: default
           </div>
         </div>
       </div>
-    </div>
-  </div>
+   
 
   {% else %}
   {% continue %}
     {% endif %}
   {% endfor %}
-
-
+  </div>
  
+  </div>
 
   <!-- lyrics container-->
 

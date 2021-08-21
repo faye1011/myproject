@@ -213,10 +213,26 @@ button {
     
     #column-two {
         padding: 5px;
-        font-size: small;
     }
     .container-lyrics{
      width: 90%;   
     }
-    
+    body {
+        font-size: medium;
+    }
+    .content-first {
+         font-size: medium;
+        width: 90%;
+        }
+    .container-two {
+        font-size: medium;
+        width: 90%;
+    }
+    .container-three {
+        font-size: medium;
+        width: 90%;
+    }
+    .table {
+        width: 100%;
+    }
   }

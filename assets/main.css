@@ -33,7 +33,6 @@ nav {
 
 @media screen and (max-width: 600px) {
     body {
-     margin: auto;
-     width: 100%;
+     font-size: small;
     }
   }

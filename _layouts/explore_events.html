@@ -6,7 +6,7 @@ layout: default
 
 <div class="page-title">
     <h1> {{ page.title }}</h1>
-<p> Explore music through the events</p>
+<p> Explore the music through their relating events: </p>
 </div>
 
 
@@ -17,12 +17,15 @@ layout: default
     {% for event in events_by_year %}
     <div class="col mb-3">
 
-      {% for page in site.page %}
-      {% if page.category == event.category %} 
-      {% assign eventurl = page.url %}
-  {% endif %}
+      {% for page in site.pages %}
+      {% assign pageurl = page.url  %}
+      {% if page.category == event.category  %} 
+       {% assign eventurl = page %}
+       
+      {% endif %}
 
   {% endfor %}
+ 
 
       
       <a href="{{ eventurl.url}}"> 
@@ -31,15 +34,17 @@ layout: default
       <div class="card text-white bg-dark mb-3 mb-3" style="width: 100%;">
         <img src="{{ event.image }}" class="card-img-top" alt="{{ event.title }}" height="300px">
         <div class="card-body">
-          <h5 class="card-title">{{event.year}}</h5>
-          <h5 class="card-title"> {{ event.title }}</h5>
+          <p>
+          <h5 class="card-title">
+          <p>{{event.year}}</p>
+          <p>{{ event.title }}</p>
+      </h5>
+      <p> {{event.description}}</p>
         </div>
-       <p> click here</p>
       </div>
        </a>
-
     </div>
-    {% endfor %}  
+    {% endfor %} 
   </div> 
   </a>
-</div>
+</div> 

@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<!-- css-->
 <link rel="stylesheet" href="../assets/exhibition.css">
 
 <!-- events -->  
@@ -21,8 +22,8 @@ layout: default
         {% if event.location %} 
            <p class="italic"> <i class="bi bi-geo-alt-fill"></i> {{ event.location }}</p>
            {% endif %}
-           {% if event.date%}
-           <p class="italic"> <i class="bi bi-calendar-event"></i>   {{ event.date |date_to_long_string }}</p>
+           {% if event.duration %}
+           <p class="italic"> <i class="bi bi-calendar-event"></i>   {{ event.duration }}</p>
            {% endif %}
            
           
@@ -63,7 +64,7 @@ layout: default
 <div class="container-two"> 
     <div class="container-title">
             <h1 id="scrollspyHeading1"><p> {{ song.title }}</p></h1> <h4> <p>{{song.artist}}</p></h>
-      <p> read more</p>
+    
     </div>
     <div class="row">
 
@@ -131,17 +132,33 @@ layout: default
                 {% endif %}
               </tbody>
             </table>
+             
+            {% if song.versions %}
+            <em>Versions: </em>
+            <p>{{ song.versions }}</p>
+            {% endif %}
         </div>
       </div>
     </div>
+</div>
 
-        
-  </div>
-  <div class=container-four>
 
-    {{ content }}
+      <!--lyric button from each page-->
+ <div class="container-four justify-content-center">
+   <div class="lyric-button">
+        <a class="btn btn-primary" id="lyric-button" data-bs-toggle="collapse"href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <i class="bi bi-chevron-down"></i>  Explore the lyrics <i class="bi bi-chevron-down"></i>
+        </a>
+ </div>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+           {{ content }}
+        </div>
+     
+ 
+
     
-    </div>
+
 
 
 <!--- description-->
@@ -153,20 +170,24 @@ layout: default
             <h3> About {{ song.title }}:</h3>
            
               <p> {{ song.description}}</p>
-              
-                {% if song.versions %}
-                <em>Versions: </em>
-                <p>{{ song.versions }}</p>
-                {% endif %}
-              
+             
+              {% if song.award1 %}
               <p> <i class="bi bi-award-fill"></i> {{ song.award1 }}</p>
+                {% endif %}
+              {% if song.award2 %}
               <p> <i class="bi bi-award-fill"></i> {{ song.award2 }}</p>
+                {% endif %}
+              {% if song.award3 %}
               <p> <i class="bi bi-award-fill"></i> {{ song.award3 }}</p>
+                {% endif %}
               <p> recommendation of sources:</p>
-    
+     {% else %}
+    {% continue %}
+      {% endif %}
+    {% endfor %}
   
-  <!--- Modals for images-->
-              {% if song.image %}
+  <!--- Modals for extra images-->
+              
               <button data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div>
                   <img src="{{ song.image }}" id="image" class="img-fluid" alt="{{ song.image-description}}">
@@ -181,46 +202,105 @@ layout: default
                     <div class="modal-body">
                       <img src="{{ song.image }}" id="image" class="img-fluid" width="100%" height="100%" alt="{{ song.image-description}}">
                     </div>
-                    <div class="modal-footer">
-                      <p> {{ song.image-description }}</p>
-                    </div>
+              
                   </div>
                 </div>
-                
-                {% endif %}
               </div>     
-  
-  
+   </div>
 
-      <!-- second column -->
+  {% for object in site.objects %}
+   {% if object.title == page.title %}
+
+      <!-- second column / cover art modals -->
     <div class="col-lg-6 justify-content-start">
 
             <!-- Button(image) trigger modal -->
             <button data-bs-toggle="modal" data-bs-target="#exampleModal2">
                 <div class="coverart-image">
-                <img src="{{ song.coverart }}" id="coverart" class="img-fluid" alt="{{ song.coverart-description}}">
+                <img src="{{ object.image }}" id="coverart" class="img-fluid" alt="{{ object.description}}">
               </div>
             </button>
 
             <!-- Modal -->
             <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-lg modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-lg modal-dialog modal-dialog-centered modal-dialog-scrollable ">
                 <div class="modal-content">
                   <div class="modal-body">
-                    <img src="{{ song.coverart }}" id="coverart" class="img-fluid" alt="{{ song.coverart-description}}">
+                    <div class="modal-ca">
+                    <img src="{{ object.image }}" id="coverart" class="img-fluid" alt="{{ object.description}}">
+                    </div>
+                    <table class="table" id="ca-metadata">
+                      <tbody>
+                        <tr>
+                          <th scope="row">Title</th>
+                          <td>{{ object.title }}</td>
+                        </tr> 
+                        <tr> 
+                          <th scope="row">Description</th>
+                            <td>{{ object.description }}</td>
+                          </tr>
+                        <tr>
+                          <th scope="row">Creator</th>
+                          <td>{{ object.creator }}</td>
+                          </tr>
+                        <tr> 
+                          <th scope="row">Publisher</th>
+                          <td>{{ object.publisher }}</td>
+                      </tr>
+                        <tr>
+                          <th scope="row">Contributor</th>
+                          <td>{{ object.contributor }}</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Date</th>
+                          <td>{{ object.year }}</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Type</th>
+                          <td>{{ object.type }}</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Format</th>
+                          <td>{{ object.format }}</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Identifier</th>
+                          <td>{{ object.indentifier }}</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Source</th>
+                          <td>{{ object.source }}</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Language</th>
+                          <td>{{ object.language}}</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Relation</th>
+                          <td>{{ object.relation }}</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Coverage</th>
+                          <td>{{ object.coverage }}</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Rights</th>
+                          <td>{{ object.rights }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
-                  <div class="modal-footer">
-                    {{ song.coverart-description }}
-                  </div>
+                  
                 </div>
               </div>
+              
           </div>
 
 
           <!-- Button(image) trigger modal -->
           <button  data-bs-toggle="modal" data-bs-target="#exampleModal3">
               <div class="coverart-image">
-                <img src="{{ song.coverart2 }}" id="coverart" class="img-fluid" alt="{{ song.coverart-description}}">
+                <img src="{{ object.image2 }}" id="coverart" class="img-fluid" alt="{{ object.description}}">
               </div>
           </button>
 
@@ -229,35 +309,36 @@ layout: default
             <div class="modal-lg modal-dialog modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-body">
-                    <img src="{{ song.coverart2 }}" id="coverart" class="img-fluid" alt="{{ song.coverart-description}}">
-                </div>
-                <div class="modal-footer">
-                  {{ song.coverart2-description }}
+                  <div class ="coverart">
+                    <img src="{{ object.image2 }}" id="coverart" class="img-fluid" alt="{{ object.description}}">
+                  </div>
+                  
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  
-    
-  
-  </div>
+   
+
   {% else %}
   {% continue %}
     {% endif %}
   {% endfor %}
+  </div>
  
+  </div>
 
   <!-- lyrics container-->
 
-</div>
+
  {% include navigation_dark.html %}
 
 </div>
 
+
+
+ </div>
 
 
 

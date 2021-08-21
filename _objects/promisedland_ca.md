@@ -1,5 +1,5 @@
 ---
-image:  media/images/broadside_issue_14.jpg  
+image:
 title:
 subject:
 description:

@@ -1,6 +1,7 @@
 ---
+layout: event
 title: Sam Cooke Turned Away From Hotel
-category: sam cooke hotel
+category: Sam Cooke Turned Away From Hotel
 year: 1963
 location: Shreveport, Lousiana
 date: 8th October, 1963

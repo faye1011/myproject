@@ -1,7 +1,7 @@
 ---
-
-title: James Meredith enrollment into University
-category: james meredith enrollment
+layout: event
+title: James Meredith Enrolment into University
+category: James Meredith Enrolment
 year: 1962
 duration: 1st October. 1962
 location: Mississippi 

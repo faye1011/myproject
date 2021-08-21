@@ -1,7 +1,7 @@
 ---
-
+layout: event
 title: March on Washington
-category: march on washington
+category: March on Washington
 year: 1963
 location: Washington, DC
 duration: 28th August, 1963

@@ -1,8 +1,8 @@
 ---
-
+layout: event
 title: Montgomery Bus Boycott
 year: 1955
-category: montgomery bus boycott
+category: Montgomery Bus Boycott
 location: Montgomery, Alabama
 duration: 5th December, 1955 - 20th December, 1956
 image: media/images/events/montgomery_bus_boycott.jpg

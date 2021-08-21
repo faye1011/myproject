@@ -1,5 +1,6 @@
 ---
-category: assassination of mlk
+layout: event
+category: Assassination of MLK
 title: Assassination of Martin Luther King Jr.
 year: 1968
 duration: 4th April, 1968

@@ -1,7 +1,7 @@
 ---
-
+layout: event
 title: Freedom Rides
-category: freedom rides
+category: Freedom Rides
 year: 1961
 duration: 4th May, 1961 - 10th December, 1961
 location: to Southern States in the US

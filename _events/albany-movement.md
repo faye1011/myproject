@@ -1,8 +1,8 @@
 ---
-
+layout: event
 title: Albany Movement
 year: 1961
-category: albany movement
+category: Albany Movement
 location: Albany, Georgia
 duration: November 1961
 image: media/images/events/albany_movement.jpg

@@ -148,9 +148,6 @@ h3 {
 
 
 /* lyrics */
-#lyric-container {
-    padding: 50px;
-}
 
 #column-one {
     padding: 30px
@@ -208,3 +205,18 @@ button {
     
 }
 
+@media screen and (max-width: 600px) {
+    #column-one {
+        padding: 5px;
+        font-size: small;
+    }
+    
+    #column-two {
+        padding: 5px;
+        font-size: small;
+    }
+    .container-lyrics{
+     width: 90%;   
+    }
+    
+  }

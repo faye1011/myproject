@@ -24,6 +24,4 @@ versions: |
      Pete Seeger<br>
      Bob Dylan<br>
      Bruce Springsteen.
-
-coverart: media/images/cover-art/keepyoureyes_coverart.jpg
 ---

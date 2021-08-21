@@ -12,14 +12,16 @@
 
 .pagenav{
     color: black;
-    font-size: x-large;
+    font-size: large;
 }
 
 
-
+.bi {
+    font-size: 1.2rem;
+    }
 
 .navigation {
     width: 90%;
     margin: auto;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }

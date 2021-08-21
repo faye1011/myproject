@@ -1,3 +1,5 @@
+---
+image:
 title:
 subject:
 description:
@@ -14,3 +16,4 @@ relation:
 coverage:
 rights:
 index:
+---

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Glory
-event: Selma to Montgoemry March
+event: Selma to Montgomery March
 artist: Common and John Legend
 genre: Hip hop, soul
 writer: John Stephens, Lonnie Lynn, Che Smith

@@ -24,6 +24,4 @@ versions: |
 
 sources: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/StrangeFruit.pdf
 
-coverart: media/images/cover-art/strange_fruit_cover_art.jpg
-coverart-description: Cover of Strange Fruit
 ---

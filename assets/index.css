@@ -1,67 +1,105 @@
-#homepage {
+body {
+    background-color: black;
+    color: white;
+    
+}
+
+#homepage1 {
     display: flex;
     width: auto;
     flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 40px;
+ 
+   
+}
+#homepage {
+   
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: right;
    
 }
 
-#homepage:nth-child(2) {
-    background-color: black;
-    height: 200px;
-    align-items: center;
-    justify-content: flex-end;
-    color: white;
-
+h4 {
+    text-align:left;
 }
+
 
 h2 {
     color: antiquewhite;
+    text-align: center;
 }
 p {
-    font-size: large;
-}
-#homepage:nth-child(3) {
-    background-color: black;
-    height: 200px;
-    align-items: center;
-    justify-content: center;
-    color: white;
+    font-size: medium;
 }
 
-#homepage:nth-child(4) {
-    height: 150px;
-    align-items: center;
-    justify-content: center;
-   
-}
-
-#homepage:nth-child(5) {
-    height: 150px;
-    align-items: center;
-    justify-content: center;
+.guide{
+    text-align: left;
 }
 
 #link-one {
-    color: antiquewhite;
+    color: rgb(255, 255, 167);
     text-decoration: none;
     font-size: x-large;
+    
 }
 
 #link-one:hover {
-    color: rgb(252, 225, 191);
+    color: rgb(146, 146, 146);
     text-decoration: none;
     font-size: x-large;
+    
 
 } 
 
 #link-two {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: large;
 }
+#link-two:hover {
+    color: rgb(146, 146, 146);
+   
+} 
 
 #link-three {
     font-size: large;
-    color: black;
+    color: white;
     text-decoration: none;
+}
+#link-three:hover {
+    color: rgb(146, 146, 146);
+   
+} 
+
+
+
+.container-one {
+    margin: auto;
+    width: 80%;
+    align-items: center;
+    height: auto;
+    
+}
+
+.welcome {
+    padding-top: 60px;
+
+}
+
+.instructions {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  
+}
+
+.enter {
+text-align: right;
+padding-bottom: 30px;
+}
+
+.homepage-container {
+    margin: auto;
+    width: 80%;
 }

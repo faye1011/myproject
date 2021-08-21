@@ -5,25 +5,44 @@ layout: default
 
 <div class="page-title">  
   <h1> {{ page.title}}</h1>
-  <p> Explore the songs here</p>
+  <p> Explore the songs:</p>
 </div>
+
 
 
 <div class="container-fluid" id="songs-container">
   <div class="row justify-content-center">
     <div class="col-4" id="column-one">
       {% for song in site.songs limit:7 %}
+{% for page in site.pages %}
+{% assign pageurl = page.url %}
+{% if page.title == song.title %} 
+ {% assign songurl = page %}
+ 
+{% endif %}
+
+{% endfor %} 
+
           <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="{{song.url}}"> <i class="bi bi-record-circle-fill"></i> <strong>{{ song.title }} </strong>({{ song.released }}) <br> <em><span class="artist">{{song.artist}}</span></em></a></li>
-           
+            <li class="list-group-item"><a href="{{songurl.url}}"> <i class="bi bi-record-circle-fill"></i> <strong>{{ song.title }} </strong>({{ song.released }}) <br> <em><span class="artist">{{song.artist}}</span></em></a></li>
+    
+      
           </ul>
              {% endfor %}
     </div>
       
     <div class="col-4">
    {% for song in site.songs offset:7 %}
+   {% for page in site.pages %}
+{% assign pageurl = page.url %}
+{% if page.title == song.title %} 
+ {% assign songurl = page %}
+ 
+{% endif %}
+
+{% endfor %} 
           <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="{{page.url}}"> <i class="bi bi-record-circle-fill"></i> <strong>{{ song.title }}</strong> ({{ song.released }})<br> <em> <span class="artist">  {{song.artist}}</span></em></a></li>
+            <li class="list-group-item"><a href="{{songurl.url}}"> <i class="bi bi-record-circle-fill"></i> <strong>{{ song.title }}</strong> ({{ song.released }})<br> <em> <span class="artist">  {{song.artist}}</span></em></a></li>
              
         </ul>
     {% endfor %}

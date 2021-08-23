@@ -1,5 +1,5 @@
 ---
-image:
+image: media/images/cover-art/weshallovercome_coverart.jpg
 title: We Shall Overcome
 subject:
 description: Image of Vinyl of We Shall Overcome by Pete Seeger

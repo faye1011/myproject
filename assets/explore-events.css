@@ -5,9 +5,7 @@
 
 
 }
-.h4{
-    font-size: small;
-}
+
 .container-one {
     width: 90%;
     margin: auto;
@@ -43,4 +41,15 @@ h5:hover {
 
 
     
+}
+
+@media screen and (max-width: 800px) {
+.container-one { 
+    width: 100%;
+    margin: auto;
+    }
+    .card{
+        padding: 10px;
+
+    }
 }

@@ -18,8 +18,4 @@ award1:
 award2:
 award3:
 versions:
-
-
-
-coverart: media/images/cover-art/mississippigoddam_coverart.jpg
 ---

@@ -4,7 +4,7 @@ title: How I Got Over
 event: March On Washington
 artist: Mahalia Jackson
 genre: Gospel hymn
-writer: Clara Ward
+writer: Brewster
 producer: Irving Townsend
 album:
 label: Columbia / Legacy
@@ -18,6 +18,10 @@ soundcloud-artist: https://soundcloud.com/mahalia-jackson-official
 award1: Grammy Award for Best Soul Gospel Performance (by Mahalia Jackson), 1976
 award2:
 award3:
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellusLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellus
-versions: Orginal - Clara Ward
+description1: Mahalia Jackon performed 'How I Got Over' at the March on Washington in front of the 250,000 people.
+description: How I Got over was first made famous by Clara Ward
+versions: |
+    Clara Ward and the Ward Singers (1950) <br>
+    Aretha Franklin (1972) <br>
+    Blind Boys of Alabama (2008)
 ---

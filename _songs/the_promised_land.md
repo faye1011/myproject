@@ -19,6 +19,6 @@ award3:
 description: Berry wrote the song whilst he was in prison. He tells his story of the journey from Norfolk, Virginia to the 'Promised Land', Los Angeles, California.
 versions: |
     Elvis Presley
-coverart: media/images/cover-art/promisedland_coverart.jpg
+
 
 ---

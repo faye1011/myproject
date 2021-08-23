@@ -17,6 +17,5 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
 award1:
 award2:
 award3:
-coverart: media/images/cover-art/hbd_coverart.jpg
-coverart-description:   
+
 ---

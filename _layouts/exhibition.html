@@ -35,7 +35,20 @@ layout: default
             {% if event.songdesc %}
            <p class="placeholder">  {{ event.songdesc }}</p>  
            {% endif %}
+
+
+           <!-- description for events with more than 1 song -->
+           {% for song in site.songs %}
+           {% if song.title == page.title %} 
+           {% if song.description1 %}
+           <p class="placeholder">  {{song.description1 }}</p>  
+           {% endif %}
+           {% else %}
+           {% continue %}
+             {% endif %}
+         {% endfor %} 
          </div>
+
     <!-- event image-->
         <div class="col-lg-6">
         <img src="{{ event.image }}" class="img-fluid" alt="{{ event.title }}">
@@ -186,11 +199,13 @@ layout: default
       {% endif %}
     {% endfor %}
   
+    {% for object in site.objects %}
+    {% if object.category == page.category %}
   <!--- Modals for extra images-->
-              
+              {% if object.image %}
               <button data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div>
-                  <img src="{{ song.image }}" id="image" class="img-fluid" alt="{{ song.image-description}}">
+                  <img src="{{ object.image }}" id="image" class="img-fluid" alt="{{ object.description }}">
                </div> 
               </button>
               
@@ -200,16 +215,88 @@ layout: default
                   <div class="modal-content">
     
                     <div class="modal-body">
-                      <img src="{{ song.image }}" id="image" class="img-fluid" width="100%" height="100%" alt="{{ song.image-description}}">
+                      <img src="{{ object.image }}" id="image" class="img-fluid" width="100%" height="100%" alt="{{ object.description }}">
+                      <table class="table" id="ca-metadata">
+                        <tbody>
+                          <tr>
+                            <th scope="row">Title</th>
+                            <td>{{ object.title }}</td>
+                          </tr> 
+                          <tr> 
+                            <th scope="row">Description</th>
+                              <td>{{ object.description }}</td>
+                            </tr>
+                          <tr>
+                            <th scope="row">Creator</th>
+                            <td>{{ object.creator }}</td>
+                            </tr>
+                          <tr> 
+                            <th scope="row">Publisher</th>
+                            <td>{{ object.publisher }}</td>
+                        </tr>
+                          <tr>
+                            <th scope="row">Contributor</th>
+                            <td>{{ object.contributor }}</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Date</th>
+                            <td>{{ object.year }}</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Type</th>
+                            <td>{{ object.type }}</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Format</th>
+                            <td>{{ object.format }}</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Identifier</th>
+                            <td>{{ object.indentifier }}</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Source</th>
+                            <td>{{ object.source }}</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Language</th>
+                            <td>{{ object.language}}</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Relation</th>
+                            <td>{{ object.relation }}</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Coverage</th>
+                            <td>{{ object.coverage }}</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Rights</th>
+                            <td>{{ object.rights }}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    
                     </div>
               
                   </div>
                 </div>
-              </div>     
-   </div>
+                {% else %}
+              {% continue %}
+                {% endif %}
+                {% endif %}
+              {% endfor %}
 
-  {% for object in site.objects %}
-   {% if object.title == page.title %}
+              </div>  
+              
+
+
+  {% for coverart in site.coverarts %}
+   {% if coverart.title == page.title %}
 
       <!-- second column / cover art modals -->
     <div class="col-lg-6 justify-content-start">
@@ -217,7 +304,7 @@ layout: default
             <!-- Button(image) trigger modal -->
             <button data-bs-toggle="modal" data-bs-target="#exampleModal2">
                 <div class="coverart-image">
-                <img src="{{ object.image }}" id="coverart" class="img-fluid" alt="{{ object.description}}">
+                <img src="{{ coverart.image }}" id="coverart" class="img-fluid" alt="{{ coverart.description}}">
               </div>
             </button>
 
@@ -227,84 +314,82 @@ layout: default
                 <div class="modal-content">
                   <div class="modal-body">
                     <div class="modal-ca">
-                    <img src="{{ object.image }}" id="coverart" class="img-fluid" alt="{{ object.description}}">
+                    <img src="{{ coverart.image }}" id="coverart" class="img-fluid" alt="{{ coverart.description}}">
                     </div>
                     <table class="table" id="ca-metadata">
                       <tbody>
                         <tr>
                           <th scope="row">Title</th>
-                          <td>{{ object.title }}</td>
+                          <td>{{ coverart.title }}</td>
                         </tr> 
                         <tr> 
                           <th scope="row">Description</th>
-                            <td>{{ object.description }}</td>
+                            <td>{{ coverart.description }}</td>
                           </tr>
                         <tr>
                           <th scope="row">Creator</th>
-                          <td>{{ object.creator }}</td>
+                          <td>{{ coverart.creator }}</td>
                           </tr>
                         <tr> 
                           <th scope="row">Publisher</th>
-                          <td>{{ object.publisher }}</td>
+                          <td>{{ coverart.publisher }}</td>
                       </tr>
                         <tr>
                           <th scope="row">Contributor</th>
-                          <td>{{ object.contributor }}</td>
+                          <td>{{ coverart.contributor }}</td>
                         </tr>
                         <tr>
                           <th scope="row">Date</th>
-                          <td>{{ object.year }}</td>
+                          <td>{{ coverart.year }}</td>
                         </tr>
                         <tr>
                           <th scope="row">Type</th>
-                          <td>{{ object.type }}</td>
+                          <td>{{ coverart.type }}</td>
                         </tr>
                         <tr>
                           <th scope="row">Format</th>
-                          <td>{{ object.format }}</td>
+                          <td>{{ coverart.format }}</td>
                         </tr>
                         <tr>
                           <th scope="row">Identifier</th>
-                          <td>{{ object.indentifier }}</td>
+                          <td>{{ coverart.indentifier }}</td>
                         </tr>
                         <tr>
                           <th scope="row">Source</th>
-                          <td>{{ object.source }}</td>
+                          <td>{{ coverart.source }}</td>
                         </tr>
                         <tr>
                           <th scope="row">Language</th>
-                          <td>{{ object.language}}</td>
+                          <td>{{ coverart.language}}</td>
                         </tr>
                         <tr>
                           <th scope="row">Relation</th>
-                          <td>{{ object.relation }}</td>
+                          <td>{{ coverart.relation }}</td>
                         </tr>
                         <tr>
                           <th scope="row">Coverage</th>
-                          <td>{{ object.coverage }}</td>
+                          <td>{{ coverart.coverage }}</td>
                         </tr>
                         <tr>
                           <th scope="row">Rights</th>
-                          <td>{{ object.rights }}</td>
+                          <td>{{ coverart.rights }}</td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
+                </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
-                    
-                  
                 </div>
               </div>
               
-          </div>
-
+      
 
           <!-- Button(image) trigger modal -->
           <button  data-bs-toggle="modal" data-bs-target="#exampleModal3">
               <div class="coverart-image">
-                <img src="{{ object.image2 }}" id="coverart" class="img-fluid" alt="{{ object.description}}">
+                <img src="{{ coverart.image2 }}" id="coverart" class="img-fluid" alt="{{ coverart.description}}">
               </div>
           </button>
 
@@ -314,7 +399,7 @@ layout: default
               <div class="modal-content">
                 <div class="modal-body">
                   <div class ="coverart">
-                    <img src="{{ object.image2 }}" id="coverart" class="img-fluid" alt="{{ object.description}}">
+                    <img src="{{ coverart.image2 }}" id="coverart" class="img-fluid" alt="{{ coverart.description}}">
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

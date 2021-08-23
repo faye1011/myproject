@@ -67,3 +67,5 @@ collections:
     output: true
   objects:
     output: true
+  coverarts:
+    output: true

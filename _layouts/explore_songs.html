@@ -12,7 +12,7 @@ layout: default
 
 <div class="container-fluid" id="songs-container">
   <div class="row justify-content-center">
-    <div class="col-4" id="column-one">
+    <div class="col-6 .col-sm-4" id="column-one">
       {% for song in site.songs limit:7 %}
 {% for page in site.pages %}
 {% assign pageurl = page.url %}
@@ -31,7 +31,7 @@ layout: default
              {% endfor %}
     </div>
       
-    <div class="col-4">
+    <div class="col-6 col-sm-4">
    {% for song in site.songs offset:7 %}
    {% for page in site.pages %}
 {% assign pageurl = page.url %}

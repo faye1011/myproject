@@ -13,7 +13,8 @@ language: English
 duration: 
 released: 1962
 video: https://www.youtube.com/embed/veiJLhXdwn8
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellusLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellus
+description: Oh, Freedom orignally has roots in the spirtual 'Before I'd Be a Slave'
+description1: Odetta performed 'Oh, Freedom' at the March on Washington in front of the 250,000 people.
 award1:
 award2:
 award3:

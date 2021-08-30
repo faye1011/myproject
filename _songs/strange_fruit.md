@@ -6,11 +6,11 @@ artist: Billie Holiday
 genre: Blues, Jazz
 writer: Abel Meeropol
 producer: Milt Gabler
-album:
+album: Single 
 label: Commodore
-country:
-language:
-duration:
+country: USA
+language: English
+duration: '3:02'
 released: 1939
 video: https://www.youtube.com/embed/-DGY9HvChXk
 description: | 

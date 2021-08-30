@@ -6,11 +6,11 @@ artist: Mahalia Jackson
 genre: Gospel hymn
 writer: Brewster
 producer: Irving Townsend
-album:
+album: 
 label: Columbia / Legacy
 country: USA
 language: English
-duration:
+duration: '6:37'
 released: 1951
 soundcloud: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/582772221&color=%23fffad2&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true
 soundcloud-source: https://soundcloud.com/mahalia-jackson-official/how-i-got-over-10

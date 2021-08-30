@@ -6,11 +6,11 @@ artist: Chuck Berry
 genre: Rock and roll
 writer: Chuck Berry
 producer: Leonard Chess, Philip Chess
-album:
+album: St. Louis to Liverpool
 label: Chess Records
-country:
-language:
-duration:
+country: USA
+language: English
+duration: '2:24'
 released: 1964
 video: https://www.youtube.com/embed/cK6MElklfvM
 award1:

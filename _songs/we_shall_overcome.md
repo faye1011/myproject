@@ -4,13 +4,14 @@ title: We Shall Overcome
 event: Albany Movement
 artist: Guy Carawan, Pete Seeger, Joan Beez
 genre: Folk
-writer:
-producer:
-album:
-label:
-country:
-language:
-released: 
+writer: Pete Seeger, Guy Carawan, Zilphia Horton, Frank Hamilton
+producer: Harold Leventhal
+album: We Shall Oovercome
+label: Columbia 
+country: USA
+language: English 
+duration: '5:58' 
+released: 1963
 video: https://www.youtube.com/embed/nM39QUiAsoM
 award1: Grammy for Best Folk Recording by Pete Seeger, 1963
 award2:

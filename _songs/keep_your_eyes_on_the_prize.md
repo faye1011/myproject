@@ -6,13 +6,12 @@ artist: Pete Seeger
 genre: Folk
 writer: Alice Wine
 producer: Lawrence Cohn
-album:
-label:
+album: We Shall Overcome
+label: Columbia
 country: USA
 language: English
-duration:
+duration: '2:00'
 released: 1963
-
 soundcloud: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1023382657&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true
 soundcloud-artist: https://soundcloud.com/pete-seeger-official 
 soundcloud-source: https://soundcloud.com/pete-seeger-official/keep-your-eyes-on-the-prize-3

@@ -1,9 +1,10 @@
+---
 title:
 subject:
 description:
 creator:
 publisher:
-contributor:
+contributor: Carl Benkert, Ronald Clyne Toshi Seeger 
 year:
 type:
 format:
@@ -14,3 +15,4 @@ relation:
 coverage:
 rights:
 index:
+--

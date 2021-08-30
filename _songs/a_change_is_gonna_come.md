@@ -7,12 +7,11 @@ genre: Soul, R&B
 producer: Hugo & Luigi
 label: RCA, Hollywood, Californa
 writer: Sam Cooke
-producer:
-album:
+album: Ain't That Good News
 country: USA
 language: English
-duration:
-released: 1962
+duration: '3:11'
+released: 1964
 soundcloud: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/326222437&color=%23fffad2&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true
 soundcloud-source: https://soundcloud.com/samcooke/a-change-is-gonna-come-3
 soundcloud-artist: https://soundcloud.com/samcooke

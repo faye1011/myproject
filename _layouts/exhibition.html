@@ -143,6 +143,27 @@ layout: default
                   <td>{{ song.writer }}</td>
                 </tr>
                 {% endif %}
+
+                <tr>
+                  {% if song.duration %}
+                  <th scope="row">Duration</th>
+                  <td>{{ song.duration }}</td>
+                </tr>
+                {% endif %}
+
+                <tr>
+                  {% if song.language %}
+                  <th scope="row">Language</th>
+                  <td>{{ song.language }}</td>
+                </tr>
+                {% endif %}
+
+                <tr>
+                  {% if song.country %}
+                  <th scope="row">Country</th>
+                  <td>{{ song.country }}</td>
+                </tr>
+                {% endif %}
               </tbody>
             </table>
              
@@ -279,8 +300,7 @@ layout: default
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      </div>
-                    
+                    </div>
                     </div>
               
                   </div>
@@ -377,7 +397,6 @@ layout: default
                       </tbody>
                     </table>
                   </div>
-                </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>

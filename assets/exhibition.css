@@ -35,7 +35,7 @@
     color: black;
     background-color: white;
     width: auto;
-    margin: autoß;
+    margin: auto;
     font-size: large;
     float: center;
    
@@ -98,10 +98,10 @@ font-size: large;
     text-align: center;
     padding-top: 30px;
 }
-.bi {
+/*.bi {
     font-size: 1rem;
 }
-
+*/
 .italic {
     font-weight:400;
     font-style: italic;
@@ -204,6 +204,7 @@ button {
     padding-top:20px;
     
 }
+
 
 @media screen and (max-width: 600px) {
     #column-one {

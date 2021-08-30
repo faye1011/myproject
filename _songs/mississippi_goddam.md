@@ -6,14 +6,14 @@ artist: Nina Simone
 genre: R&B
 writer: Nina Simone
 producer: Hal Mooney
-album:
+album: Nina Simone in Concert
 label: Philips Records
 country: USA
 language: English
-duration:
+duration: '2:58'
 released: 1964
 video: https://www.youtube.com/embed/LJ25-U3jNWM
-description: The song was Simones response to the racially motivated murders of Emmett Till and Medgars Evers in Mississippi as well as the 16th Street Baptist Church Bombing. The song was banned in several US states because of the word ‘goddam’.
+description1: The song Mississippi Goddam was Simones response to the racially motivated murders of Emmett Till and Medgars Evers in Mississippi as well as the 16th Street Baptist Church Bombing. 
 award1:
 award2:
 award3:

@@ -16,8 +16,8 @@ soundcloud: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tr
 soundcloud-artist: https://soundcloud.com/pete-seeger-official 
 soundcloud-source: https://soundcloud.com/pete-seeger-official/keep-your-eyes-on-the-prize-3
 description: | 
-    Alice Wine, who earned her living cleaning linen for a white family in Charleston, taught Guy Carawan how to sing 'Keep Your Eyes on the Prize in 1960'. Carawan later introduced the lyrics to activists from the Student Nonviolent Coordinating Committee NCCS. <br>
-    The song was orginially based off of the hymn 'Keep Your Hands on the Plow with lyrics modified
+   The song was orginially based off of the hymn 'Keep Your Hands on the Plow' with lyrics modified. However, Alice Wine, who earned her living cleaning linen for a white family in Charleston, taught Guy Carawan how to sing 'Keep Your Eyes on the Prize' in 1960. Carawan later introduced the lyrics to activists from the Student Nonviolent Coordinating Committee NCCS.
+    
 versions: |
      Mahalia Jackson, <br>
      Pete Seeger<br>

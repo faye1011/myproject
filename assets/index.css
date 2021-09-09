@@ -10,10 +10,11 @@ body {
     padding-top: 70px;
     padding-bottom: 80px;
     height: auto;
-    
- 
-   
+}  
+.guide {
+    padding-top: 30px;
 }
+
 #homepage {
    
     padding-top: 30px;
@@ -64,25 +65,6 @@ p {
 
 } 
 
-#link-two {
-    color: white;
-    text-decoration: none;
-    font-size: large;
-}
-#link-two:hover {
-    color: rgb(146, 146, 146);
-   
-} 
-
-#link-three {
-    font-size: large;
-    color: white;
-    text-decoration: none;
-}
-#link-three:hover {
-    color: rgb(146, 146, 146);
-   
-} 
 
 
 

@@ -8,7 +8,7 @@ layout: default
     <h1> {{ page.title }}</h1>
 <p> Explore the music through their relating events: </p>
 </div>
-
+ 
 
 <div class="container-one">
 
@@ -21,7 +21,8 @@ layout: default
       {% assign pageurl = page.url  %}
       {% if page.category == event.category  %} 
        {% assign eventurl = page %}
-       
+
+
       {% endif %}
 
   {% endfor %}

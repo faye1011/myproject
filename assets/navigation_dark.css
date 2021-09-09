@@ -1,19 +1,22 @@
 .button-prev {
     float: left;
-  
    
+  
 }
 
 
 .button-next {
     float: right;
+  
    
 }
 
 .pagenav{
     color: black;
     font-size: large;
+   
 }
+
 
 
 .bi {

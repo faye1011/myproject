@@ -13,8 +13,8 @@ language: English
 duration: '5:53'
 released: 1980
 video: https://www.youtube.com/embed/inS9gAgSENE
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellus
-description1: Stevie Wonder performed happy birthday on King's birthday  on Jan 15, 1981 in order to honour King infront of 25,000
+description: Happy Birthday was one of Wonder's most popular entries in the UK Singles Charts as it reached number 2. Wonder also performed the song on Nelson Mandela day at Radio Music Hall and performed at the Diamond Jubliee Concert for the  Diamond Jubilee of Elizabeth II in 2012
+description1: To honour King, Stevie Wonder wrote Happy Birthday in order to popularize the campaign in order for King's birthday to be a national holiday in America. He performed it on King's birthday, Jan 15, 1981 in order to honour King infront of 25,000
 award1:
 award2:
 award3:

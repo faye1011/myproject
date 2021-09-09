@@ -14,7 +14,7 @@ language:
 duration:
 released: 1964
 video: https://www.youtube.com/embed/Sd5R0susntk
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellusLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis tellus
+description1: Coltrane recorded this song 2 months after the 16th Street Baptist Church Bombing and it is thought that it was an eulogy for the victims.
 versions:
 
 ---

@@ -1,6 +1,8 @@
 ---
+index: 11
 layout: default
 title: Glory
+event: Selma to Montgomery March
 artist: Common and John Legend
 genre: Hip hop, soul
 writer: John Stephens, Lonnie Lynn, Che Smith
@@ -20,5 +22,5 @@ award3: Best Song Written for Visual Media, 2016
 description1: Glory was written for the film - Selma, which is about the Selma to Montgomery marches.
 description: The song was performed by John Legend and Common for the 2020 National Democratic Convention which was dedicated to John Lewis who was an American civil rights leader and politician.
 versions:
-
+source1: https://www.rollingstone.com/music/music-news/john-legend-common-perform-glory-to-honor-john-lewis-at-2020-dnc-1047887/
 ---

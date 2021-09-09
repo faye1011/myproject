@@ -1,4 +1,5 @@
 ---
+index: 2
 layout: default
 title: Keep Your Eyes on The Prize
 event: Montgomery Bus Boycott
@@ -23,4 +24,5 @@ versions: |
      Pete Seeger<br>
      Bob Dylan<br>
      Bruce Springsteen.
+source1: https://main.oxfordamerican.org/magazine/item/1871-keep-you-eyes-on-the-prize 
 ---

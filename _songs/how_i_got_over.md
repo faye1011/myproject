@@ -1,4 +1,5 @@
 ---
+index: 7
 layout: default
 title: How I Got Over
 event: March On Washington
@@ -24,4 +25,5 @@ versions: |
     Clara Ward and the Ward Singers (1950) <br>
     Aretha Franklin (1972) <br>
     Blind Boys of Alabama (2008)
+source1: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/HowIGotOver.pdf
 ---

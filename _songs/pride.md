@@ -1,4 +1,5 @@
 ---
+index: 13
 layout: default
 title: Pride (In The Name of Love)
 event: Assassination of MLK
@@ -21,5 +22,5 @@ award1: "#388 on Rolling Stone list of the 'The 500 Greatest Songs of All Time'"
 award2:
 award3:
 versions:
-coverart: media/images/cover-art/pride_coverart.jpg
+source1: https://www.thelist.com/384171/what-does-u2s-pride-in-the-name-of-love-really-mean/
 ---

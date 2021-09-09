@@ -1,0 +1,38 @@
+body {
+    color: white;
+    background-color: black;
+    font-size: x-large;
+}
+.container-one{
+    margin: auto;
+    width: 70%;
+}
+.guide-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.guide-title{
+    text-align: center;
+    padding: 30px;
+}
+.enter-exhibition {
+    padding-top: 40px;
+    text-align: right;
+}
+.guide-one {
+    padding-top: 10px;
+}
+#link-one {
+    color: rgb(255, 255, 167);
+    text-decoration: none;
+    font-size: x-large;
+    
+}
+
+#link-one:hover {
+    color: rgb(146, 146, 146);
+    text-decoration: none;
+    font-size: x-large;
+    
+
+} 

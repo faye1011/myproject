@@ -1,0 +1,26 @@
+---
+layout: default
+permalink: /Bibliography
+---
+
+
+
+<h2> Bibliography and recommendation of sources:</h2>
+
+{% assign songs_by_page = site.songs | sort: "index" %}
+{% for song in songs_by_page %}
+<h5> {{song.title }} and {{song.event}}:</h5> 
+{% if song.source1 %}
+ <p> {{ song.source1 }}:</p>
+ {% endif %}
+ {% if song.source2 %}
+ <p> {{ song.source2 }}:</p>
+ {% endif %}
+ {% if song.source3 %}
+ <p> {{ song.source3 }}:</p>
+ {% endif %}
+ {% if song.source4 %}
+ <p> {{ song.source4 }}:</p>
+ {% endif %}
+
+ {% endfor %}

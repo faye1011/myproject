@@ -1,4 +1,5 @@
 ---
+index: 6
 layout: default
 title: A Change Is Gonna Come
 event: Sam Cooke Turned Away From Hotel 
@@ -20,4 +21,5 @@ versions:
 award1: "Voted #3 in Pitchfork’s Media’s the 200 Greatest songs of the 1960s"
 award2: "Voted #12 by representatives of music industry and media in Rolling Stone’s Greatest Songs of   All Time"
 award3: Labelled as ‘the most important song ever recorded' by NPR
+source1: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/AChangeIsGonnaCome.pdf
 ---

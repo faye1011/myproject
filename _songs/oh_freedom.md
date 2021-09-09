@@ -1,4 +1,5 @@
 ---
+index: 8
 layout: default
 title: Oh, Freedom
 event: March on Washington
@@ -19,4 +20,5 @@ award1:
 award2:
 award3:
 versions: Harry Belfontane 
+source1: https://www.washingtonpost.com/blogs/arts-post/post/music-of-the-movement-oh-freedom/2011/08/01/gIQAQyyR9I_blog.html
 ---

@@ -1,4 +1,5 @@
 ---
+index: 10
 layout: default
 title: God Will Take Care of You
 event: Selma to Montgomery March
@@ -19,5 +20,6 @@ award1:
 award2:
 award3:
 versions:
+source1: https://hymnary.org/text/be_not_dismayed_whateer_betide
 
 ---

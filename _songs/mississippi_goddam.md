@@ -1,4 +1,5 @@
 ---
+index: 9
 layout: default
 title: Mississippi Goddam
 event: 16th Street Baptist Church Bombing
@@ -19,4 +20,5 @@ award1:
 award2:
 award3:
 versions:
+source1: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/MississippiGoddam.pdf
 ---

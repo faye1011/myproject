@@ -1,4 +1,5 @@
 ---
+index: 12
 layout: default
 title: Happy Birthday
 event: Assassination of MLK
@@ -18,5 +19,7 @@ description1: To honour King, Stevie Wonder wrote Happy Birthday in order to pop
 award1:
 award2:
 award3:
+source1: https://nypost.com/2021/01/18/mlk-day-how-stevie-wonders-happy-birthday-helped-holiday/
+source2: https://www.thecurrent.org/feature/2019/01/16/martin-luther-king-jr-day-stevie-wonder-happy-birthday
 
 ---

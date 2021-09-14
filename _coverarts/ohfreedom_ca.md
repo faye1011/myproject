@@ -15,5 +15,5 @@ language:
 relation:
 coverage:
 rights:
-index:
+index: 7
 ---

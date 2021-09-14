@@ -23,4 +23,5 @@ description1: Glory was written for the film - Selma, which is about the Selma t
 description: The song was performed by John Legend and Common for the 2020 National Democratic Convention which was dedicated to John Lewis who was an American civil rights leader and politician.
 versions:
 source1: https://www.rollingstone.com/music/music-news/john-legend-common-perform-glory-to-honor-john-lewis-at-2020-dnc-1047887/
+source2: https://www.huffpost.com/entry/common-selma-song-glory-inspiration_n_6445610
 ---

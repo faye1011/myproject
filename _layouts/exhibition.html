@@ -73,14 +73,46 @@ layout: default
        {% endfor %} 
          </div>
 
+        
+
+   
     <!-- event image-->
+    
         <div class="col-lg-6">
-        <img src="{{ event.image }}" class="img-fluid" alt="{{ event.title }}">
-        {% if event.imgsource %}
-       <em><p>{{ event.imgsource }}</p></em>
-       {% endif %}
-      
+          <button  data-bs-toggle="modal" data-bs-target="#exampleModal0">
+            <div class="event-image">
+            <img src="{{ event.image }}" class="img-fluid" alt="{{ event.title }}">
+              {% if event.imgsource %}
+                <em><p>{{ event.imgsource }}</p></em>
+              {% endif %}
+            </div>
+       </button>
       </div>
+
+      <div class="modal fade" id="exampleModal0" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-xl modal-dialog modal-dialog-centered ">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class ="event-image">
+                <img src="{{ event.image }}" id="coverart" class="img-fluid" alt="{{event.image-desc}}">
+              </div>
+            </div>
+              <div class="modal-footer">
+                <div class="imagedesc">
+                  <p>{{event.image-desc}}</p>
+                  <p>Source: {{event.image-source}}</p>
+                </div>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
       
     </div>
    <div class="down-arrow">

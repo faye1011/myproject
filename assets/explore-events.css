@@ -1,48 +1,21 @@
-.page-title {
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 50px;
-
-
-}
-
+body {
+    background-color: black;
+ } 
 .container-one {
     width: 90%;
     margin: auto;
+ 
 }
 .page-title {
-    background-color: black;
-    color: aliceblue;
-}
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center; 
+     color: white;
 
+}
 .card-title {
-    color: white;
     text-align: center;
 }
-
-.card-img-overlay {
-    background: rgba(0, 0, 0, 0.7);
-}
-.card{
-    padding: 10px;
-    border-radius: 0;
-    background-color: black !important;
-}
-a {
-    text-decoration: none;
-}
-
-h5{
-    color: white;
-}
-    
-h5:hover {
-    color: rgb(56, 56, 56);
-
-
-    
-}
-
 @media screen and (max-width: 800px) {
 .container-one { 
     width: 100%;

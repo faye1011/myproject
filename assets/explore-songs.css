@@ -41,7 +41,8 @@ a:hover {
     font-weight: 300;
 }
 #songs-container{
-    padding: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
     background-color:black;
     color: white;
     margin: auto;

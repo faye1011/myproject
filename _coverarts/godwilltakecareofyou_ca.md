@@ -1,5 +1,5 @@
 ---
-image:media/images/cover-art/godwilltakecareofyou_coverart.jpg
+image: media/images/cover-art/godwilltakecareofyou_coverart.jpg
 title: God Will Take Care of You
 subject: n/a
 description: 'Image of Album Cover for Freedom Songs: Selma, Alabama'
@@ -16,4 +16,4 @@ relation: n/a
 coverage: n/a
 rights: Folkways Records
 index: 9
---
+---

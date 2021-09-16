@@ -10,5 +10,5 @@ image-desc: Photograph shows James Meredith walking to class accompanied by U.S.
 image-source: https://loc.gov/pictures/resource/ppmsca.04292/
 description: James Meredith was the first black student in America to be enrolled into the racially segregated University of Mississippi. He was denied admission twice, however riled a court case against them stating that the University only rejected him due to his race. After seel back and forths with the government, he was eventually enrolled and this was a pivotal moment in the history of the civil rights movement. 
 songdesc: Oxford Town by Bob Dylan was written as a response to the enrolment of James Meredith in University.
-songs related:
+song1: Oxford Town
 ---

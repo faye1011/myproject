@@ -10,5 +10,5 @@ image-desc:  A mob of racists beats Freedom Riders in Birmingham, Alabama, U.S.A
 image-source: https://www.neh.gov/humanities/2011/mayjune/feature/freedom-riders
 description: During freedom rides, civil rights activists ride interstate buses to the segregated Southern US. The rides took place as the Southern states ignored the ruling that segregated buses were unconstitutional and the federal government did nothing to enforce them. The activists were confronted with arrests for police as well as violence from white protestors.
 songdesc: The Promised Land by Chuck Berry addresses the several cities where the Freedom Riders stopped in its lyrics.
-songs related:
+song1: The Promised Land
 ---

@@ -1,7 +1,7 @@
 body {
     color: white;
     background-color: black;
-    font-size: x-large;
+    font-size: large;
 }
 .container-one{
     margin: auto;
@@ -36,3 +36,23 @@ body {
     
 
 } 
+
+@media screen and (max-width: 600px) {
+    body {
+     font-size: medium;
+    }
+    #link-one {
+        color: rgb(255, 255, 167);
+        text-decoration: none;
+        font-size: large;
+        
+    }
+    
+    #link-one:hover {
+        color: rgb(146, 146, 146);
+        text-decoration: none;
+        font-size: large;
+        
+    
+    } 
+  }

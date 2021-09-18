@@ -275,7 +275,12 @@ button {
         font-size: small;
     }
     .container-lyrics{
-     width: 90%;   
+     width: 100%;   
+    }
+    .lyrics {
+        width: 90%;
+        margin: auto;
+        height: auto;
     }
     body {
         font-size: medium;
@@ -286,12 +291,13 @@ button {
         }
     .container-two {
         font-size: medium;
-        width: 90%;
+        width: 100%;
     }
     .container-three {
         font-size: medium;
-        width: 90%;
+        width: 100%;
     }
+    
     .table {
         width: 100%;
     }

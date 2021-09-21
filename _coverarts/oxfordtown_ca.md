@@ -3,7 +3,7 @@ image: media/images/cover-art/oxford_coverart.jpg
 image2: media/images/cover-art/oxfordtown_vinyl.jpg
 title: Oxford Town
 subject: n/a
-description: Image of Vinyl The Freewheelin' Bob Dylan by Bob Dylan
+description: Image of Vinyl cover The Freewheelin' Bob Dylan by Bob Dylan
 creator: Bob Dylan
 publisher: Columbia Records
 contributor:

@@ -27,4 +27,5 @@ versions: |
     Aretha Franklin (1972) <br>
     Blind Boys of Alabama (2008)
 source1: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/HowIGotOver.pdf
+source2: https://www.shmoop.com/study-guides/music/how-i-got-over/meaning
 ---

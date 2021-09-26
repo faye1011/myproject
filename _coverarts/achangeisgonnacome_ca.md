@@ -2,7 +2,7 @@
 image: media/images/cover-art/sam_cooke_song_cover.jpg  
 image2: media/images/cover-art/sam_cooke_song_cover2.jpg 
 title: A Change Is Gonna Come
-subject: n/a
+subject: Civil Rights Movement
 description: Image of Vinyl for Shake/ A Change Is Gonna Come by Sam Cooke
 creator: Sam Cooke
 publisher: RCA

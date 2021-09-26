@@ -155,7 +155,7 @@ layout: default
     <div class="col-lg-4">
         <div class="container-sm song-info">
           
-          <table class="table  table-hover">
+          <table class="table">
               <tbody>
                 <tr>
                   {% if song.artist %}
@@ -233,7 +233,7 @@ layout: default
             <p>{{ song.versions }}</p>
             {% endif %}
             {% if song.more-versions %}
-            <p> <a href="{{ song.more-versions }}">Check out more versions here</a></p>
+            <p> <a href="{{ song.more-versions }}"id="link">Check out more versions here</a></p>
             {% endif %}
         </div>
       </div>
@@ -281,7 +281,7 @@ layout: default
                 {% if song.award4 %}
               <p> <i class="bi bi-award-fill"></i> {{ song.award4 }}</p>
                 {% endif %}
-             <p> <a href="/bibliography"> Find more sources here </a></p>
+             <p> <a href="/bibliography" id="link"> Find more sources here </a></p>
             
      {% else %}
     {% continue %}
@@ -316,6 +316,11 @@ layout: default
                               <td>{{ object.description }}</td>
                             </tr>
                           <tr>
+                            <tr> 
+                              <th scope="row">Subject</th>
+                                <td>{{ object.subject }}</td>
+                              </tr>
+                            <tr>
                             <th scope="row">Creator</th>
                             <td>{{ object.creator }}</td>
                             </tr>
@@ -324,24 +329,12 @@ layout: default
                             <td>{{ object.publisher }}</td>
                         </tr>
                           <tr>
-                            <th scope="row">Contributor</th>
-                            <td>{{ object.contributor }}</td>
-                          </tr>
-                          <tr>
                             <th scope="row">Date</th>
                             <td>{{ object.year }}</td>
                           </tr>
                           <tr>
-                            <th scope="row">Type</th>
-                            <td>{{ object.type }}</td>
-                          </tr>
-                          <tr>
                             <th scope="row">Format</th>
                             <td>{{ object.format }}</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Identifier</th>
-                            <td>{{ object.indentifier }}</td>
                           </tr>
                           <tr>
                             <th scope="row">Source</th>
@@ -350,14 +343,6 @@ layout: default
                           <tr>
                             <th scope="row">Language</th>
                             <td>{{ object.language}}</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Relation</th>
-                            <td>{{ object.relation }}</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Coverage</th>
-                            <td>{{ object.coverage }}</td>
                           </tr>
                           <tr>
                             <th scope="row">Rights</th>
@@ -406,62 +391,98 @@ layout: default
                     </div>
                     <table class="table" id="ca-metadata">
                       <tbody>
+                        {% if coverart.title %}
                         <tr>
                           <th scope="row">Title</th>
                           <td>{{ coverart.title }}</td>
                         </tr> 
+                        {% endif %}
+                        {% if coverart.description %}
                         <tr> 
                           <th scope="row">Description</th>
                             <td>{{ coverart.description }}</td>
                           </tr>
+                        {% endif %}
+                        {% if coverart.subject %}
+                        <tr> 
+                          <th scope="row">Subject</th>
+                            <td>{{ coverart.subject}}</td>
+                          </tr>
+                        {% endif %}
+                        {% if coverart.creator %}
                         <tr>
                           <th scope="row">Creator</th>
                           <td>{{ coverart.creator }}</td>
                           </tr>
+                          {% endif %}
+                          {% if coverart.publisher %}
                         <tr> 
                           <th scope="row">Publisher</th>
                           <td>{{ coverart.publisher }}</td>
                       </tr>
+                      {% endif %}
+                      {% if coverart.contributor %}
                         <tr>
                           <th scope="row">Contributor</th>
                           <td>{{ coverart.contributor }}</td>
                         </tr>
+                        {% endif %}
+                        {% if coverart.year %}
                         <tr>
                           <th scope="row">Date</th>
                           <td>{{ coverart.year }}</td>
                         </tr>
+                        {% endif %}
+
+                        {% if coverart.type %}
                         <tr>
                           <th scope="row">Type</th>
                           <td>{{ coverart.type }}</td>
                         </tr>
+                        {% endif %}
+                        {% if coverart.format %}
                         <tr>
                           <th scope="row">Format</th>
                           <td>{{ coverart.format }}</td>
                         </tr>
+                        {% endif %}
+                        {% if coverart.identifier %}
                         <tr>
                           <th scope="row">Identifier</th>
                           <td>{{ coverart.indentifier }}</td>
                         </tr>
+                        {% endif %}
+                        {% if coverart.source %}
                         <tr>
                           <th scope="row">Source</th>
                           <td>{{ coverart.source }}</td>
                         </tr>
+                        {% endif %}
+
+                        {% if coverart.language %}
                         <tr>
                           <th scope="row">Language</th>
                           <td>{{ coverart.language}}</td>
                         </tr>
+                        {% endif %}
+                        {% if coverart.relation %}
                         <tr>
                           <th scope="row">Relation</th>
                           <td>{{ coverart.relation }}</td>
                         </tr>
+                        {% endif %}
+                        {% if coverart.coverage %}
                         <tr>
                           <th scope="row">Coverage</th>
                           <td>{{ coverart.coverage }}</td>
                         </tr>
+                        {% endif %}
+                        {% if coverart.rights %}
                         <tr>
                           <th scope="row">Rights</th>
                           <td>{{ coverart.rights }}</td>
                         </tr>
+                        {% endif %}
                       </tbody>
                     </table>
                   </div>
@@ -473,28 +494,8 @@ layout: default
               
       
 
-          <!-- Button(image) trigger modal -->
-          <button  data-bs-toggle="modal" data-bs-target="#exampleModal3">
-              <div class="coverart-image">
-                <img src="{{ coverart.image2 }}" id="coverart" class="img-fluid" alt="{{ coverart.description}}">
-              </div>
-          </button>
 
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-lg modal-dialog modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <div class ="coverart">
-                    <img src="{{ coverart.image2 }}" id="coverart" class="img-fluid" alt="{{ coverart.description}}">
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
+           
         </div>
       </div>
    

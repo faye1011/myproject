@@ -1,7 +1,7 @@
 ---
 image: media/images/cover-art/weshallovercome_coverart.jpg
 title: We Shall Overcome
-subject:
+subject: Civil Rights Movement
 description: Image of Vinyl of We Shall Overcome by Pete Seeger
 creator: Pete Seeger
 publisher: Columbia

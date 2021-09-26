@@ -263,7 +263,12 @@ button {
     padding-top:20px;
     
 }
-
+#link {
+    color: rgb(255, 255, 174);
+}
+#link:hover {
+    color:  rgb(141, 141, 121);
+}
 /* responsive elements for phones */
 @media screen and (max-width: 600px) {
     #column-one {

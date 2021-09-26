@@ -1,7 +1,7 @@
 ---
 image: media/images/cover-art/keepyoureyes_coverart.jpg
 title: Keep Your Eyes on The Prize
-subject: Image of Vinyl We Shall Over Come by Pete Seeger
+subject:  Civil Rights Movement
 description: Image of Vinyl We Shall Over Come by Pete Seeger
 creator: Pete Seeger
 publisher: Columbia

@@ -264,7 +264,7 @@ button {
     
 }
 
-
+/* responsive elements for phones */
 @media screen and (max-width: 600px) {
     #column-one {
         padding: 5px;
@@ -302,8 +302,6 @@ button {
     .table {
         width: 100%;
     }
-
-
     .imagedesc {
         color: black;
         margin: auto;

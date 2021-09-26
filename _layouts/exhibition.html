@@ -98,7 +98,7 @@ layout: default
               <div class="modal-footer">
                 <div class="imagedesc">
                   <p>{{event.image-desc}}</p>
-                  <p>Source: {{event.image-source}}</p>
+                  <p>Source: <a href="{{ event.image-source }}"> {{ event.source-name }}</a></p>
                 </div>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               </div>

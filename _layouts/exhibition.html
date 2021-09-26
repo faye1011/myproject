@@ -130,7 +130,8 @@ layout: default
     {% if song.title == page.title %} 
 <div class="container-two"> 
     <div class="container-title">
-            <h1 id="scrollspyHeading1"><p> {{ song.title }}</p></h1> <h4> <p>{{song.artist}}</p></h>
+            <h1 id="scrollspyHeading1"><p> Listen to {{ song.title }}</p></h1> 
+            <h4> <p>By {{song.artist}}</p></h>
     
     </div>
     <div class="row">
@@ -170,6 +171,12 @@ layout: default
                   </tr>
                 {% endif %}
 
+                <tr>
+                {% if song.album %}
+                <th scope="row">Album</th>
+                <td>{{ song.album }}</td>
+              </tr>
+              {% endif %}
                 <tr>
                   {% if song.label %}
                   <th scope="row">Label</th>
@@ -222,8 +229,11 @@ layout: default
             </table>
              
             {% if song.versions %}
-            <em>Versions: </em>
+            <em>Some notable versions: </em>
             <p>{{ song.versions }}</p>
+            {% endif %}
+            {% if song.more-versions %}
+            <p> <a href="{{ song.more-versions }}">Check out more versions here</a></p>
             {% endif %}
         </div>
       </div>
@@ -267,6 +277,9 @@ layout: default
                 {% endif %}
               {% if song.award3 %}
               <p> <i class="bi bi-award-fill"></i> {{ song.award3 }}</p>
+                {% endif %}
+                {% if song.award4 %}
+              <p> <i class="bi bi-award-fill"></i> {{ song.award4 }}</p>
                 {% endif %}
              <p> <a href="/bibliography"> Find more sources here </a></p>
             

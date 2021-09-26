@@ -17,7 +17,7 @@ video: https://www.youtube.com/embed/nPBi88v7adM
 award1: Academy Award for Best Orginal Song, 2015 
 award2: Golden Globe for Best Orginal Song, 2015
 award3: Best Song Written for Visual Media, 2016
-description1: Glory was written for the film - Selma, which is about the Selma to Montgomery marches.
+description1: Glory was written for the film - Selma (2014), which is about the Selma to Montgomery marches.
 description: The song was performed by John Legend and Common for the 2020 National Democratic Convention which was dedicated to John Lewis who was an American civil rights leader and politician.
 versions:
 source1: https://www.rollingstone.com/music/music-news/john-legend-common-perform-glory-to-honor-john-lewis-at-2020-dnc-1047887/

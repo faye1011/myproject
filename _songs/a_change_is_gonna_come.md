@@ -17,9 +17,15 @@ soundcloud: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tr
 soundcloud-source: https://soundcloud.com/samcooke/a-change-is-gonna-come-3
 soundcloud-artist: https://soundcloud.com/samcooke
 description: It is said that another event which inspired Sam Cooke was inspired to write this song after watching Bob Dylan perform 'Blowing in the Wind' at the March on Washington on TV.
-versions:
+more-versions: https://secondhandsongs.com/performance/5216
+
+versions: |
+    The Supremes  (1965)<br>
+    Otis Redding (1965) <br>
+    Aretha Franklin (1967)
 award1: "Voted #3 in Pitchfork’s Media’s the 200 Greatest songs of the 1960s"
 award2: "Voted #12 by representatives of music industry and media in Rolling Stone’s Greatest Songs of   All Time"
 award3: Labelled as ‘the most important song ever recorded' by NPR
+award4: Selected for preservation in the Library of Congress, with the National Recording Registry deeming the song "culturally, historically, or aesthetically important.", 2007
 source1: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/AChangeIsGonnaCome.pdf
 ---

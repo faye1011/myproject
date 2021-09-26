@@ -19,7 +19,7 @@ description1: God Will Take Care of You was sung with the marchers and Hosea Wil
 award1:
 award2:
 award3:
-versions:
+versions: Aretha Franklin (1972)
 source1: https://hymnary.org/text/be_not_dismayed_whateer_betide
 
 ---

@@ -82,15 +82,13 @@ layout: default
           <button  data-bs-toggle="modal" data-bs-target="#exampleModal0">
             <div class="event-image">
             <img src="{{ event.image }}" class="img-fluid" alt="{{ event.title }}">
-              {% if event.imgsource %}
-                <em><p>{{ event.imgsource }}</p></em>
-              {% endif %}
+      
             </div>
        </button>
       </div>
 
       <div class="modal fade" id="exampleModal0" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-xl modal-dialog modal-dialog-centered ">
+        <div class="modal-lg modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
           <div class="modal-content">
             <div class="modal-body">
               <div class ="event-image">

@@ -1,5 +1,4 @@
 ---
-layout: event
 title: Sam Cooke Turned Away From Hotel
 category: Sam Cooke Turned Away From Hotel
 year: 1963

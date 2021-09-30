@@ -1,5 +1,4 @@
 ---
-layout: event
 category: Assassination of MLK
 title: Assassination of Martin Luther King Jr.
 year: 1968

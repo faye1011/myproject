@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
+<!-- This is the layout for the 'Events' page where you explore the exhibition via the events -->
 
-<link rel="stylesheet" href="../assets/explore-events.css">
+<link rel="stylesheet" href="../assets/explore-events.css"><!-- CSS -->
 
 <div class="container-one">
-
   <div class="page-title">
       <h1> {{ page.title }}</h1>
   <p> Explore the music through their relating events: </p>
@@ -14,12 +14,13 @@ layout: default
 
 
 
-    <!-- to sort the events by year -->
+    <!-- To sort the events by year -->
     {% assign events_by_year = site.events | sort: "year" %}
        <div class="row row-cols-1 row-cols-md-3 g-3 p-5">
         {% for event in events_by_year %}
         <div class="col mb-3">
-        <!-- to add the link to each event song to the right page-->
+
+        <!-- To add the link to each event song to the right page-->
       {% for page in site.pages %}
       {% assign pageurl = page.url %}
       {% if page.title == event.song1 %} 
@@ -30,7 +31,7 @@ layout: default
       {% endfor %}  
 
 
-      <!-- to add the link to each event with two songs to the right page-->
+      <!-- To add the link to each event with two songs to the right page-->
       {% for page in site.pages %}
       {% assign pageurl = page.url %}
       {% if page.title == event.song2 %} 
@@ -39,7 +40,7 @@ layout: default
     {% endif% }
         {% endfor %}
           {% endfor %} 
-        
+      <!-- Card of each event -->
           <div class="card-group">
             <div class="card h-100">
               <img class="card-img-top" src="{{event.image}}" alt="Card image cap">

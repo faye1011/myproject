@@ -1,5 +1,10 @@
-<link rel="stylesheet" href="../assets/navigation_dark.css">
- 
+<!-- This is the code for the dark navigation at the bottom of the exhibition -->
+
+<link rel="stylesheet" href="../assets/navigation_dark.css"> <!--CSS links to dark version-->
+ <!-- Code source: 
+    https://stackoverflow.com/questions/23032421/jekyll-page-navigation
+    Slightly adjusted for the need of my project
+    Links the pages in exhibition together based on their page 'number' -->
 <div class="navigation" >
     {% for node in site.pages %}
         {% assign next = page.number | plus: 1 %}

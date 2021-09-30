@@ -1,5 +1,4 @@
 ---
-layout: event
 title: James Meredith Enrolment into University
 category: James Meredith Enrolment
 year: 1962

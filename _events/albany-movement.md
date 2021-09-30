@@ -1,5 +1,4 @@
 ---
-layout: event
 title: Albany Movement
 year: 1961
 category: Albany Movement

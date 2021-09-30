@@ -1,5 +1,4 @@
 ---
-layout: event
 title: Selma to Montgomery March
 year: 1965
 category: Selma to Montgomery March

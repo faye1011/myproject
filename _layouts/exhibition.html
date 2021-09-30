@@ -1,33 +1,29 @@
 ---
 layout: default
 ---
-<!-- css-->
-<link rel="stylesheet" href="../assets/exhibition.css">
+<!-- This is the layout for all the pages of the exhibition  -->
 
+<link rel="stylesheet" href="../assets/exhibition.css"><!-- CSS -->
 
-
-
-<!-- progress bar-->
-
-
+<!-- Progress bar-->
 {% for event in site.events %}
-    {% if event.category == page.category %} 
+    {% if event.category == page.category %} <!--In order to display the right event on the page-->
 <div class="progress-container">
   <div class="progress">
     <div class="progress-bar" role="progressbar" style="width:{{ page.index }}%" aria-valuenow="{{page.index}}" aria-valuemin="0" aria-valuemax="100"></div>
   </div>
 </div>
 
-<!-- events -->  
+<!-- Event -->  
 <div class="container-one">
 
   {% include navigation_light.html %}
-<!-- event description -->
+
 
   <div class="content-first">
     
     {% for song in site.songs %}
-    {% if song.title == page.title %} 
+    {% if song.title == page.title %}  <!-- In order to display the right song on the page-->
     <div class="song-title">
        <h2>{{song.title}} by {{song.artist}}</h2>
     </div>
@@ -57,7 +53,7 @@ layout: default
            {% endif %}
 
 
-           <!-- description for events with more than 1 song -->
+          <!-- Description for events with more than 1 song -->
            {% for song in site.songs %}
            {% if song.title == page.title %} 
            {% if song.description1 %}
@@ -76,15 +72,14 @@ layout: default
         
 
    
-    <!-- event image-->
+    <!-- Event image and modal -->
     
-        <div class="col-lg-6">
-          <button  data-bs-toggle="modal" data-bs-target="#exampleModal0">
+      <div class="col-lg-6">
+        <button  data-bs-toggle="modal" data-bs-target="#exampleModal0">
             <div class="event-image">
             <img src="{{ event.image }}" class="img-fluid" alt="{{ event.title }}">
-      
             </div>
-       </button>
+        </button>
       </div>
 
       <div class="modal fade" id="exampleModal0" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -106,12 +101,6 @@ layout: default
           </div>
         </div>
       </div>
-
-
-
-
-
-      
     </div>
    <div class="down-arrow">
       <p> <a class="nav-link" href="#scrollspyHeading1"><i class="bi bi-chevron-down" id="arrow-down"></i></a></p>
@@ -122,10 +111,10 @@ layout: default
   {% endfor %} 
 </div>
 </div>
-<!-- end of event-->
+<!-- End of events-->
 
 
-<!--song -->
+<!--Start of song information  -->
 {% for song in site.songs %}
     {% if song.title == page.title %} 
 <div class="container-two"> 
@@ -136,7 +125,7 @@ layout: default
     </div>
     <div class="row">
 
-      <!-- video of the song -->
+      <!-- Youtube video of the song -->
       <div class="col-lg-8">
         {% if song.video %}
         <div class="ratio ratio-16x9">
@@ -144,14 +133,14 @@ layout: default
         </div>
         {% endif %}
 
-  <!-- soundcloud version of song -->
+  <!-- Soundcloud version of song -->
         {% if song.soundcloud %}
         <div>
         <iframe width="100%" style="margin:auto" height="400" scrolling="no" frameborder="no" allow="autoplay" src="{{ song.soundcloud }}"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="{{song.soundcloud-artist}}" title="{{song.artist}}" target="_blank" style="color: #cccccc; text-decoration: none;">{{song.artist}}</a> · <a href=" {{ song.soundcloudsource }}" title="{{ song.title }}" target="_blank" style="color: #cccccc; text-decoration: none;">{{ song.title }}</a></div>
       </div>
       {% endif %}
       </div>
-    <!-- table of  video metadata-->
+    <!-- Table of song metadata-->
     <div class="col-lg-4">
         <div class="container-sm song-info">
           
@@ -241,7 +230,7 @@ layout: default
 </div>
 
 
-      <!--lyric button from each page-->
+  <!--Explore the lyrics button-->
  <div class="container-four justify-content-center">
    <div class="lyric-button">
         <a class="btn btn-primary" id="lyric-button" data-bs-toggle="collapse"href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -250,16 +239,11 @@ layout: default
  </div>
         <div class="collapse" id="collapseExample">
           <div class="card card-body">
-           {{ content }}
+           {{ content }} <!-- Takes the content/lyrics from each individual page-->
         </div>
-     
- 
+<!-- End of lyrics -->
 
-    
-
-
-
-<!--- description-->
+<!--- Description of the song and image of cover-art -->
 
 <div class="container-three">
   <div class="row row align-items-start gx-5">
@@ -507,9 +491,7 @@ layout: default
   </div>
  
   </div>
- 
 
-  <!-- lyrics container-->
 
 
  {% include navigation_dark.html %}

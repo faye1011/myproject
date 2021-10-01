@@ -18,11 +18,11 @@ soundcloud-artist: https://soundcloud.com/pete-seeger-official
 soundcloud-source: https://soundcloud.com/pete-seeger-official/keep-your-eyes-on-the-prize-3
 description: | 
    Pete Seeger recorded this song for his album 'We Shall Overcome' but the song was orginially based off of the hymn 'Keep Your Hands on the Plow' with lyrics modified. Alice Wine, who earned her living cleaning linen for a white family in Charleston, taught Guy Carawan how to sing 'Keep Your Eyes on the Prize' in 1960. Carawan later introduced the lyrics to activists from the Student Nonviolent Coordinating Committee (SNCC).
-
 more-versions: https://secondhandsongs.com/performance/962504/versions#nav-entity
 versions: |
      The Limeliters (1963) <br>
      Bob Dylan (1962) <br>
      Bruce Springsteen (2006)
-source1: https://main.oxfordamerican.org/magazine/item/1871-keep-you-eyes-on-the-prize 
+source1: Hedin, 2019., “KEEP YOUR EYES ON THE PRIZE”, <em> Oxford American, </em> Issue 107.
+source1-url: https://main.oxfordamerican.org/magazine/item/1871-keep-you-eyes-on-the-prize 
 ---

@@ -21,5 +21,6 @@ award2:
 award3:
 more-versions: https://secondhandsongs.com/performance/350872
 versions: Carole Alston (2007)
-source1: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/MississippiGoddam.pdf
+source1: Cohodas, N., 2018, “Mississippi Goddam”—Nina Simone (1964), <em> National Library of Congress </em>
+source1-url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/MississippiGoddam.pdf
 ---

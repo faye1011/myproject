@@ -10,18 +10,18 @@ permalink: /Bibliography
 
     {% assign songs_by_page = site.songs | sort: "index" %}
     {% for song in songs_by_page %}
-    <h5> {{song.title }} and {{song.event}}:</h5> 
+    <h5> <em>{{song.title }} and {{song.event}}:</em></h5> 
     {% if song.source1 %}
-    <p> {{ song.source1 }}:</p>
+    <p> <a href="{{song.source1-url}}">{{ song.source1 }}</a></p>
     {% endif %}
     {% if song.source2 %}
-    <p> {{ song.source2 }}:</p>
+    <p> <a href="{{song.source2-url}}">{{ song.source2 }}</a></p>
     {% endif %}
     {% if song.source3 %}
-    <p> {{ song.source3 }}:</p>
+    <p> <a href="{{song.source3-url}}">{{ song.source3 }}</a></p>
     {% endif %}
     {% if song.source4 %}
-    <p> {{ song.source4 }}:</p>
+    <p> <a href="{{song.source4-url}}">{{ song.source4 }}</a></p>
     {% endif %}
 
     {% endfor %}

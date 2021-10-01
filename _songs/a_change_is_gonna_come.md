@@ -27,5 +27,6 @@ award1: "Voted #3 in Pitchfork’s Media’s the 200 Greatest songs of the 1960s
 award2: "Voted #12 by representatives of music industry and media in Rolling Stone’s Greatest Songs of   All Time"
 award3: Labelled as ‘the most important song ever recorded' by NPR
 award4: Selected for preservation in the Library of Congress, with the National Recording Registry deeming the song "culturally, historically, or aesthetically important.", 2007
-source1: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/AChangeIsGonnaCome.pdf
+source1: Rhule B.G, 2006,'"A Change is Gonna Come"- Sam Cooke 1964', <em> Library of Congress </em> 
+source1-url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/AChangeIsGonnaCome.pdf
 ---

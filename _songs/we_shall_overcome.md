@@ -24,6 +24,8 @@ versions: |
     Joan Baez (1963) <br>
     Mahalia Jackson (1963)
 coverart: media/images/cover-art/weshallovercome_coverart.jpg
-source1: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/WeShallOvercome.pdf 
+source1: Rosenthal,S., 2006., “We Shall Overcome”—Pete Seeger (1963), <em> National Library of Congress </3em>
+source1-url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/WeShallOvercome.pdf 
 source2: 'Seeger, Pete (1997). Where Have All The Flowers Gone – A Musical Autobiography. Bethlehem, PA: Sing Out'
+source2-url:
 ---

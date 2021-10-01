@@ -21,5 +21,6 @@ award1:
 award2:
 award3:
 versions:
-source1: https://bob-dylan.org.uk/archives/1560
+source1: "Attwood, T., 2015,  Oxford Town: Dylan’s protest song, slightly detached, <em>Untold Dylan </em>"
+source1-url: https://bob-dylan.org.uk/archives/1560
 ---

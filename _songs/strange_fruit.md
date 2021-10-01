@@ -26,9 +26,12 @@ versions: |
     Diana Ross (1972) </br>
     Sting (1986)
 more-versions: https://secondhandsongs.com/work/18135/versions
-source1: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/StrangeFruit.pdf 
-source2: https://academic.oup.com/maghis/article-abstract/18/2/54/953029?redirectedFrom=fulltext 
-source3: https://www.jstor.org/stable/pdf/23597541.pdf?refreqid=excelsior%3Ab2f5597b9ce33f782d33e0a37fe95599
+source1: O'Dell, C., 2002, “Strange Fruit”—Billie Holiday (1939), <em> National Library of Congress </em>
+source1-url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/StrangeFruit.pdf 
+source2: "Stone, C., 2004 , Blood at the Root: “Strange Fruit” as Historical Document and Pedagogical Tool, <em> OAH Magazine of History </em>, Vol 10, Issue 2."
+source2-url: https://academic.oup.com/maghis/article-abstract/18/2/54/953029?redirectedFrom=fulltext 
+source3: "Carvalho, J. M., 2013. “Strange Fruit”: Music between Violence and Death. The Journal of Aesthetics and Art Criticism, 71(1), 111–119. "
+source3-url: https://www.jstor.org/stable/pdf/23597541.pdf?refreqid=excelsior%3Ab2f5597b9ce33f782d33e0a37fe95599
 
 
 

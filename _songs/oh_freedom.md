@@ -27,6 +27,6 @@ versions: |
     Harry Belfontane (1960)<br> Pete Seeger (1963)<br>
     Joan Baez (1964) 
     
-
-source1: https://www.washingtonpost.com/blogs/arts-post/post/music-of-the-movement-oh-freedom/2011/08/01/gIQAQyyR9I_blog.html
+source1: "Trescott, J., 2011, Music of the Movement, <em> The Washington Post </em>"
+source1-url: https://www.washingtonpost.com/blogs/arts-post/post/music-of-the-movement-oh-freedom/2011/08/01/gIQAQyyR9I_blog.html
 ---

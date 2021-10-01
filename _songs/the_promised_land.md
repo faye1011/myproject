@@ -22,7 +22,8 @@ more-versions: https://secondhandsongs.com/work/62360/versions
 versions: |
     The Grateful Dead (1971)<br>
     Elvis Presley (1973) <br>
-source1: https://www.heraldonline.com/latest-news/article12273290.html
+source1: Self, J., 2011,. Chuck Berry song 'Promised Land' refers to Rock Hill, <em> The Herald </em>
+source1-url: https://www.heraldonline.com/latest-news/article12273290.html
 
 
 ---

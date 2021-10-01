@@ -25,6 +25,6 @@ more-versions: https://secondhandsongs.com/performance/32202
 versions: |
     Barbara Dickson (1987)<br>
     John Legend (2008)
-
-source1: https://www.thelist.com/384171/what-does-u2s-pride-in-the-name-of-love-really-mean/
+source1: Arevalo, A., 2021, What Does U2's Pride (In The Name Of Love) Really Mean?, <em> The List </em>
+source1-url: https://www.thelist.com/384171/what-does-u2s-pride-in-the-name-of-love-really-mean/
 ---

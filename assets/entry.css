@@ -1,9 +1,11 @@
+/* Styling for the guide entry page  */
 body {
     color: white;
     background-color: black;
     font-size: large;
 }
-.container-one{
+/* container for the whole div */
+.container-one{ 
     margin: auto;
     width: 70%;
 }
@@ -19,16 +21,19 @@ body {
     padding-top: 40px;
     text-align: right;
 }
+/* Style of each guide instructions */
 .guide-one {
     padding-top: 10px;
 }
+
+/* Style of ext link to enter exhibition */
 #link-one {
     color: rgb(255, 255, 167);
     text-decoration: none;
     font-size: x-large;
     
 }
-
+/* Style text link to enter exhibition when mouse hovers over the text */
 #link-one:hover {
     color: rgb(146, 146, 146);
     text-decoration: none;
@@ -36,7 +41,8 @@ body {
     
 
 } 
-
+ 
+/* Adjusted styles for responsiveness on mobile devices */
 @media screen and (max-width: 600px) {
     body {
      font-size: medium;

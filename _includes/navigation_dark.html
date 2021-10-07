@@ -7,19 +7,19 @@
     Links the pages in exhibition together based on their page 'number' -->
 <div class="navigation" >
     {% for node in site.pages %}
-        {% assign next = page.number | plus: 1 %}
-        {% assign prev = page.number | minus: 1 %}
-        {% if prev == node.index %}
-            {% assign prev_page = node %}
-        {% endif %}
-        {% if next == node.number %}
+        {% assign next = page.number | plus: 1 %}  <!-- Assign 'next' to every page number up -->
+        {% assign prev = page.number | minus: 1 %} <!--  Assign 'prev' to every page number down-->
+        {% if prev == node.index %} 
+            {% assign prev_page = node %} <!--if the page is previous assign the 'prev_page' to it-->
+        {% endif %} 
+        {% if next == node.number %} <!--if the page is next assign the 'next_page' to it-->
             {% assign next_page = node %}
         {% endif %}
     {% endfor %}
 
     <div class="button-prev">
         <button type="button" class="btn btn-sm">
-        {% if prev_page %}
+        {% if prev_page %} <!-- if the page is a previous page get its url-->
             <a class="pagenav" href="{{ prev_page.url }}"> <i class="bi bi-arrow-left"></i> {{ prev_page.title }}</a>
         {% endif %}
         </button>
@@ -27,7 +27,7 @@
 
     <div class="button-next">
         <button type="button" class="btn btn-sm">
-        {% if next_page %}
+        {% if next_page %}<!-- if the page is a next page get its url-->
             <a class="pagenav" href="{{ next_page.url }}"> {{next_page.title}}<i class="bi bi-arrow-right"></i></a>
         {% endif %}
         </button>

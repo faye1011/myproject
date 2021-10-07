@@ -1,7 +1,15 @@
+/* Styling for homepage/index */
+
 body {
     background-color: black;
     color: white;
     
+}
+
+.homepage-container {
+    margin: auto;
+    width: 80%;
+    justify-content: end;
 }
 
 #homepage1 {
@@ -11,17 +19,9 @@ body {
     padding-bottom: 80px;
     height: auto;
 }  
-.guide {
-    padding-top: 30px;
-}
 
-#homepage {
-   
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: right;
-   
-}
+
+
 .intropara {
     font-size: x-large;
     border-top: solid 1px white;
@@ -33,31 +33,26 @@ body {
     padding-top: 60px;
 }
 
-h4 {
-    text-align:left;
-}
-
 
 h1 {
     color: antiquewhite;
     text-align: center;
 }
+
 p {
     font-size: medium;
 }
 
-.guide{
-    text-align: left;
-}
 
-#link-one {
+
+#link-one { /* Styling for link to enter exhibition */
     color: rgb(255, 255, 167);
     text-decoration: none;
     font-size: x-large;
     
 }
 
-#link-one:hover {
+#link-one:hover { /* Styling for link to enter exhibition on hover */
     color: rgb(146, 146, 146);
     text-decoration: none;
     font-size: x-large;
@@ -66,37 +61,14 @@ p {
 } 
 
 
-
-
-.container-one {
-    margin: auto;
-    width: 80%;
-    align-items: center;
-    height: auto;
-    
-}
-
-.welcome {
-    padding-top: 60px;
-
-}
-
-.instructions {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    width: 70%;
-}
-
 .enter {
 text-align: right;
 padding-bottom: 30px;
 }
 
-.homepage-container {
-    margin: auto;
-    width: 80%;
-    justify-content: end;
-}
+
+
+/* Responsive styling for mobile phones */
 @media screen and (max-width: 600px) {
     .intropara {
         font-size: medium;

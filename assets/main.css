@@ -1,3 +1,5 @@
+/* Styling for whole website, for consistent design */
+
 body { 
     font-family: 'Montserrat', sans-serif;
     background-color: white;
@@ -17,31 +19,24 @@ li, ul {
 .bi {
     font-size: 1rem;
 }
+
+/* navbar styling underneath */
 nav {
     background-color: black;
     font-size: medium;
 }
 
-/* to override the default bootstrap colour of the navbar */
 .navbar {
-    background-color: black !important;
-   
+    background-color: black !important;/* to override the default bootstrap colour of the navbar */
 }
 
 .nav-item {
     padding-right: 20px;
     font-size: medium;
 }
-.bi-question-circle {
-    font-size: 1.5rem;
-    color: white;
-}
-.modal-title {
-    color: black;
-}
-#help-modal {
-    color: black;
-}
+
+
+/* Responsive elemtent for styling */
 @media screen and (max-width: 600px) {
     body {
      font-size: small;

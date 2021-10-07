@@ -1,24 +1,38 @@
+/* Styling for the exhibition layout */
 
+/* Stylings for progress bar */
 .progress-container {
-  margin: auto;
-  background-color: black; 
-  padding-top: 50px;
+    margin: auto;
+    background-color: black; 
+    padding-top: 50px;
 }
+
 .progress {
     width: 80%;
-  margin: auto;
+    margin: auto;
 }
+
 .progress-bar {
-
-background-color:cornflowerblue;
-color: black;
+    background-color:cornflowerblue;
+    color: black;
 }
 
+
+/* Styling for CONTAINER ONE displaying event information */
+/* All selectors beneath '.container-one' are for elements in '.container-one '*/
 .container-one {
-  width: 100%;
-  margin:auto;  
-  background-color: black;
+    width: 100%;
+    margin:auto;  
+    background-color: black;
   
+}
+
+.content-first {
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    color:white;
+    font-size: large;
 }
 
 .song-title {
@@ -27,6 +41,47 @@ color: black;
     text-align: center;
 }
 
+
+.imagedesc { /* Description of the event styling */
+    color: black;
+    margin: auto;
+    font-size: medium;
+    text-align: left;
+}
+
+.modal-ca {
+    text-align: center;/* Centres text in modal  */
+}
+
+
+.event-image {
+    text-align: center; /* Centres image in modal  */
+}
+
+
+.down-arrow { /* Arrow positioning at the bottom of events   */
+    text-align: center;
+    padding-top: 30px;
+}
+
+#arrow-down {/* Arrow coour and size */
+    font-size: 3rem;
+    color: rgb(255, 255, 174)
+}
+
+#arrow-down:hover {/* Arrow coour and size on hover */
+    color: rgb(141, 141, 121)
+}
+
+
+.italic {/* font style of the location and date of event  */
+    font-weight:400;
+    font-style: italic;
+
+}
+
+/* Styling for CONTAINER TWO which displays audio/video of song */
+/* All selectors beneath '.container-two' are for elements in '.container-two'*/
 
 .container-two {
     width: 90%;
@@ -40,17 +95,27 @@ color: black;
     background-color: black;
 }
 
+.container-title { /* title of the song */
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    
+}
 
-.container-three {
-    padding: 40px;
-    margin: auto;
-    width: 90%;
+.table {
+    width: 80%;
     color: aliceblue;
-    background-color: black;
+}
+
+.container-sm {/* align table to the left */
+align-content: left;
+}
 
   
-}
-.container-four {
+/* Styling for CONTAINER THREE consisting of lyrics */
+/* All selectors beneath '.container-three' are for elements in '.container-three '*/
+
+.container-three {
     
     color: black;
     background-color: white;
@@ -58,35 +123,21 @@ color: black;
     margin: auto;
     font-size: large;
     float: center;
-   
-    
 }
 
+.btn {
+    padding: 10px;
+}   
 
-.modal-ca {
-    text-align: center ;
-}
-.event-image {
-    text-align: center;
-}
-.imagedesc {
-    color: black;
-    margin: auto;
-    font-size: medium;
-    text-align: left;
-}
-
-.popover-lyric{
+.popover-lyric{ /* targets .popover-lyric from lyrics on individual pages  */
     border: none;
     background-color: rgb(255, 255, 174);
     text-align: left;
     padding: none;
-    
-
-
 
 }
-.popover{
+
+.popover{ /* targets .popover from lyrics on individual pages  */
     font-size: large;
     border: solid 2px cornflowerblue ;
     background-color: rgb(248, 248, 248) ;
@@ -94,7 +145,7 @@ color: black;
 
 }
 
-.popover .popover-arrow::before, .popover .popover-arrow::after {
+.popover .popover-arrow::before, .popover .popover-arrow::after {  /* blue arrow on popover  */
     border-right-color: cornflowerblue;
 }
 
@@ -116,107 +167,7 @@ color: black;
     height: auto;
    
 }
-.lyric-title {
-    text-align: center; 
-    padding-bottom: 30px;
-   
-}
-.table {
-    width: 80%;
-    color: aliceblue;
-}
 
-.container-sm {
-align-content: left;
-}
-
-.content-first {
-width: 80%;
-margin: auto;
-padding-top: 50px;
-color:white;
-font-size: large;
-}
-
-
-
-
-
-.title {
-    text-align: left;
-
-}
-
-/* arrow */
-
-.down-arrow{
-    text-align: center;
-    padding-top: 30px;
-}
-/*.bi {
-    font-size: 1rem;
-}
-*/
-.italic {
-    font-weight:400;
-    font-style: italic;
-
-}
-
-/*song title */
-.container-title {
-    text-align: left;
-    padding-top: 50px;
-    padding-bottom: 30px;
-    
-}
-.btn {
-    padding: 10px;
-}
-
-
-.container-table {
-padding-top: 5px;
-}
-
-.description {
-padding-top: 20px;
-}
-
-#arrow {
-    font-size: 1.5em;
-}
-#arrow-down {
-    font-size: 3rem;
-    color: rgb(255, 255, 174)
-}
-#arrow-down:hover {
-    color: rgb(141, 141, 121)
-}
-
-.lyric-title {
-    color: black;
-}
-
-h3 {
-
-    padding-bottom: 20px;
-    color: white;
-}
-
-
-/* lyrics */
-.col-4 {
-    padding: 10px;
-    text-align: left;
-    margin: auto;
-    width: 80%;
-}
-
-
-
-
-/** button for the lyrics **/
 .lyric-button{
 
     background-color: rgb(255, 255, 255);
@@ -225,7 +176,7 @@ h3 {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    }
+}
     
 #lyric-button{
     font-size: x-large;
@@ -235,12 +186,27 @@ h3 {
     border: none ;
     padding-left: 20px;
     padding-right: 20px;
-    }
+}
 
- 
+/* Styling for CONTAINER FOUR of description of song and coverart */
+/* All selectors beneath '.container-four' are for elements in '.container-four '*/
 
-/* cover-art styling */
-.coverart-image {
+.container-four {
+    padding: 40px;
+    margin: auto;
+    width: 90%;
+    color: aliceblue;
+    background-color: black;
+}
+
+
+h3 {
+
+    padding-bottom: 20px;
+    color: white;
+}
+
+.coverart-image {/* cover-art styling */
     padding: 10px;
 }
 .coverart{ 
@@ -249,7 +215,7 @@ h3 {
     margin: auto;
 }
 
-button {
+button { /* Button for modal on images. All elements none/transparent so outline doesnt show on images  */
     text-decoration: none;
     border: none;
     background-color: transparent;
@@ -263,13 +229,18 @@ button {
     padding-top:20px;
     
 }
-#link {
+
+
+#link {/*  colour links for more versions */
     color: rgb(255, 255, 174);
 }
-#link:hover {
+#link:hover {/* colour links for more versions */
     color:  rgb(141, 141, 121);
 }
-/* responsive elements for phones */
+
+
+
+/* responsive elements for mobile devices */
 @media screen and (max-width: 600px) {
     #column-one {
         padding: 5px;

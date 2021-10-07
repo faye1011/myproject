@@ -1,8 +1,10 @@
+/* Styling for explore-songs page */
+
+
 body {
     background-color:  black;
     color: white(99, 42, 42);
 }
-
 .page-title {
     padding-top: 60px;
     padding-bottom: 50px;
@@ -13,7 +15,16 @@ body {
     
 }
 
-.list-group-item {
+#songs-container{
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color:black;
+    color: white;
+    margin: auto;
+    width: 80%;
+}
+
+.list-group-item {/* styling for each song in list */
     padding: 10px;
     background-color: black;
     color: white;
@@ -25,14 +36,14 @@ body {
 }
 
 
-a {
+a { /* font styling for each song link  */
     color: white;
     text-decoration:none;
     font-weight: 400;
 
 }
 
-a:hover {
+a:hover { /* font styling for each song link on hover  */
     color: rgb(53, 53, 52)
 }
 
@@ -40,15 +51,10 @@ a:hover {
     font-size: medium;
     font-weight: 300;
 }
-#songs-container{
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color:black;
-    color: white;
-    margin: auto;
-    width: 80%;
-}
 
+
+
+/* Resposnive elements for mobile phones */
 @media screen and (max-width: 800px) {
     #songs-container {
     font-size: medium;

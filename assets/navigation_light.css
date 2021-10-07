@@ -1,26 +1,24 @@
+/* Syling for navigation on the top of exhibition */
+
 .button-prev {
     float: left;
-  
-  
-   
 }
 
 
 .button-next {
     float: right;
-   
 }
 
 .pagenav {
-    color: white;
+    color: white; /* white so it constrasts on black background */
     font-size: large;
-   
 }
 
 
 .bi {
-font-size: 1.2rem;
+    font-size: 1.2rem;
 }
+
 .navigation {
     width: 90%;
     margin: auto;

@@ -9,7 +9,7 @@ contributor: Harold Leventhal
 year: 1963
 type: Folk, World and Country
 format: Vinyl
-identifier: n/a
+identifier: 
 source: Image from https://www.discogs.com/Pete-Seeger-We-Shall-Overcome/release/1898296
 language: English
 relation:

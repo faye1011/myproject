@@ -10,7 +10,7 @@ permalink: /Bibliography
 
     {% assign songs_by_page = site.songs | sort: "index" %}
     {% for song in songs_by_page %}
-    <h5> <em>{{song.title }} and {{song.event}}:</em></h5> 
+    <h5> <strong>{{song.title }} and {{song.event}}:</strong></h5> 
     {% if song.source1 %}
     <p> <a href="{{song.source1-url}}">{{ song.source1 }}</a></p>
     {% endif %}

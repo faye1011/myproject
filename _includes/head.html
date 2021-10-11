@@ -1,9 +1,29 @@
 <!-- This is the head which contains any css sheets for the whole website, bootstrap css and fonts -->
+
 <!DOCTYPE html>
-    <head>
+    <head> 
+        <html prefix="og: https://ogp.me/ns#">
+        <!-- meta data so website can be shared on social media-->
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    
+        <meta name="description" content="{{ site.description }}">
+        <meta name="keywords" content="civil rights movement, music, music of the civil rights movement,">
+        <meta name="author" content="Faye Schuster">
+        <!-- Facebook opengraph-->
+        <meta property="og:url" content="https://crmmusic.netlify.app/"/> 
+        <meta property="og:title" content="{{ site.title }}"/> 
+        <meta property="og:description" content="{{ site.description }}"/> 
+        <meta property="og:image" content="/media/images/baptist_church_bombing.jpeg"/> 
+        <meta property="og:site_name" content="{{ site.title }}"/> 
+        <meta property="og:type" content="website"/> 
+        <meta property="og:locale" content="en_GB"/>
+        <!--Twitter card-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content=" {{ site.title }}">
+        <meta name="twitter:title" content=" {{site. description }}">
+        <meta name="twitter:image" content="/media/images/baptist_church_bombing.jpeg">   
+
+
     <!-- CSS - bootstrap and main stylesheet--> 
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">

@@ -7,8 +7,10 @@
 h2 {
     padding-top: 30px;
     padding-bottom: 30px;
+    font-weight: 700;
 }
 a {
     text-decoration: underline;
     color: black;
+    
 }

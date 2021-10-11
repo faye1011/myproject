@@ -1,5 +1,7 @@
 /* Styling for the Bibliography page */
-
+body {
+    background-color: rgb(220, 220, 220);
+}
 .container-one {
     width: 90%;
     margin: auto;
@@ -9,9 +11,12 @@ h2 {
     padding-top: 30px;
     padding-bottom: 30px;
     font-weight: 700;
+   
 }
 a {
     text-decoration: underline;
-    color: black;
+    color: rgb(14, 14, 14);
+    font-size: large;
     
 }
+

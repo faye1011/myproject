@@ -15,7 +15,7 @@ duration: '3:02'
 released: 1939
 video: https://www.youtube.com/embed/-DGY9HvChXk
 description: | 
-   Holiday was reluctant to sing and perform the song when it was initially brought to her. The song was out of character to what she would initially sing as the lyrics were about the lynching of black Americans happening at the time in the Southern States of America. However, despite this, it turned out to be one of her most renowned songs which reached number 16 on the charts.
+   Holiday was reluctant to sing and perform the song when it was initially brought to her. The song was out of character to what she would initially sing, as the lyrics were about the lynching of black Americans happening at the time in the southern states of America. However, despite this, it turned out to be one of her most renowned songs which reached number 16 on the charts.
 award1: Grammy Hall of Fame, 1978
 award2: Song of the Century Times Magazine, 1999
 award3: Sold over 1 million copies worldwide

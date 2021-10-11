@@ -17,7 +17,7 @@ video: https://www.youtube.com/embed/M_Ld8JGv56E
 award1: Grammy for Best Folk Recording by Pete Seeger, 1963
 award2: Selected for preservation in the Library of Congress, with the National Recording Registry deeming the song "culturally, historically, or aesthetically important.", 2007
 award3:
-description: Pete Seeger first heard the song sung by Tobacco workers in the late 1940s.  Prior to the Albany movement, the song was commonly performed within the Southern white folk tradition. When the organisation was led by Bernice Johnson Reagon, black activists changed the structure and tempo of the song which turned it into a protest song sung at mass gatherings (Ward)
+description: Pete Seeger first heard the song sung by Tobacco workers in the late 1940s.  Prior to the Albany movement, the song was commonly performed within the Southern white folk tradition. When the organisation was led by Bernice Johnson Reagon, black activists changed the structure and tempo of the song which turned it into a protest song sung at mass gatherings.
 more-versions: https://secondhandsongs.com/performance/444349/versions#nav-entity
 versions: |
     Guy Carawan (1961)<br> 

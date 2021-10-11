@@ -3,7 +3,7 @@ title: Freedom Rides
 category: Freedom Rides
 year: 1961
 duration: 4th May, 1961 - 10th December, 1961
-location: to Southern States in the US
+location: Washington, DC to southern states in the US
 image: media/images/events/freedom_rides.jpeg
 image-desc:  A mob of racists beats Freedom Riders in Birmingham, Alabama, U.S.A. This picture was reclaimed by the FBI from a local journalist who also was beaten and whose camera was smashed.
 source-name: National Endowment for the Humanities

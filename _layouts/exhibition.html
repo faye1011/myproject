@@ -9,8 +9,8 @@ layout: default
 {% for event in site.events %}
     {% if event.category == page.category %} <!--In order to display the right event on the page-->
 <div class="progress-container">
-  <div class="progress">
-    <div class="progress-bar" role="progressbar" style="width:{{ page.index }}%" aria-valuenow="{{page.index}}" aria-valuemin="0" aria-valuemax="100"></div>
+  <div class="progress"> 
+    <div class="progress-bar" role="progressbar" style="width:{{page.index }}%" aria-valuenow="{{page.index}}" aria-valuemin="0" aria-valuemax="100"></div><!-- creates red line because it takes from index of pages but works nevertheless-->
   </div>
 </div>
 
@@ -216,7 +216,7 @@ layout: default
             <p>{{ song.versions }}</p>
             {% endif %}
             {% if song.more-versions %}
-            <p> <a href="{{ song.more-versions }}"id="link">Check out more versions here</a></p>
+            <p> <a href="{{ song.more-versions }}"id="link">Check out more versions here</a></p> <!-- more versions to a website with has all the versions of the song-->
             {% endif %}
         </div>
       </div>
@@ -231,10 +231,14 @@ layout: default
           <i class="bi bi-chevron-down"></i>  Click here to explore the lyrics <i class="bi bi-chevron-down"></i>
         </a>
  </div>
+
+
         <div class="collapse" id="collapseExample">
           <div class="card card-body">
            {{ content }} <!-- Takes the content/lyrics from each individual page-->
         </div>
+
+
 <!-- End of lyrics -->
 
 <!--- Description of the song and image of cover-art -->
@@ -259,7 +263,7 @@ layout: default
                 {% if song.award4 %}
               <p> <i class="bi bi-award-fill"></i> {{ song.award4 }}</p>
                 {% endif %}
-             <p> <a href="/bibliography" id="link"> Find more sources here </a></p>
+             <p> <a href="/bibliography" id="link"> Bibliography and more sources here </a></p><!--more sources link-->
             
      {% else %}
     {% continue %}

@@ -2,27 +2,36 @@
 layout: default
 permalink: /Bibliography
 ---
-<link rel="stylesheet" href="assets/bibliography.css">
+<!-- page which contains majority of the sources used for the content-->
+<link rel="stylesheet" href="assets/bibliography.css"> <!-- css-->
 
 <div class="container-one">
 
     <h2> Bibliography and recommendation of sources:</h2>
 
-    {% assign songs_by_page = site.songs | sort: "index" %}
-    {% for song in songs_by_page %}
-    <h5> <strong>{{song.title }} and {{song.event}}:</strong></h5> 
+    {% assign songs_by_page = site.songs | sort: "index" %}<!-- sort the songs in order of the index (order of how they present in exhibition)-->
+    {% for song in songs_by_page %} 
+    <!-- sources which relate to individual events/songs-->
+    <h4> <strong>{{song.title }} and {{song.event}}:</strong></h4> 
     {% if song.source1 %}
-    <p> <a href="{{song.source1-url}}">{{ song.source1 }}</a></p>
+    <p> <a href="{{song.source1-url}}">{{ song.source1 }}</a></p> <br>
     {% endif %}
     {% if song.source2 %}
-    <p> <a href="{{song.source2-url}}">{{ song.source2 }}</a></p>
+    <p> <a href="{{song.source2-url}}">{{ song.source2 }}</a></p> <br>
     {% endif %}
     {% if song.source3 %}
-    <p> <a href="{{song.source3-url}}">{{ song.source3 }}</a></p>
+    <p> <a href="{{song.source3-url}}">{{ song.source3 }}</a></p> <br>
     {% endif %}
     {% if song.source4 %}
-    <p> <a href="{{song.source4-url}}">{{ song.source4 }}</a></p>
+    <p> <a href="{{song.source4-url}}">{{ song.source4 }}</a></p> <br>
     {% endif %}
 
     {% endfor %}
+    <!-- list of other used -->
+    <h4> Other notable resources: </h4>
+    <p> Rabaka, R., 2016. Civil rights music: The soundtracks of the civil rights movement. Lexington Books.</p>
+    <p> Darden, R., 2013. Nothing But Love in God's Water: Black sacred music from the Civil War to the Civil Rights Movement. Penn State University Press.</p>
+    <p> Ward, B., 2006. ‘’People Get Ready’: Music and the Civil Rights Movement of the 1950s and 1960s’, History Now, 8.</p>
+   
+
 </div>

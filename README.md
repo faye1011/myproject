@@ -16,6 +16,7 @@ Data of the events are under the '_events' collection
 Data of the songs are under the '_songs' collection
 Data of the cover arts are under the '_coverarts' collection
 Images are under the 'media' folder
+CSS style sheets are under the 'assets' folder
 
 
 Submission date:

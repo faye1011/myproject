@@ -19,7 +19,7 @@ Images are under the 'media' folder </br>
 CSS files are under the 'assets' folder</br>
 
 
-Submission date:
+Submission date: 12/10/2021
 
  
 Description of repository: This repository contains a Jekyll-based website in the form of a digital exhibition exploring music from the Civil Rights Movement

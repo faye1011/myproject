@@ -20,7 +20,7 @@ award1: Grammy Award for Best Soul Gospel Performance by Mahalia Jackson, 1976
 award2: Ward's original version was selected for preservation in the National Recording Registry by the Library of Congress as being "culturally, historically, or artistically significant, 2018 
 award3:
 description1: Mahalia Jackon performed 'How I Got Over' at the March on Washington in front of the 250,000 people.
-description: How I Got over was first made famous by Clara Ward, who according to her sister, wrote the song after being racially attacked by a group of white men. Her mother got them to leave by pretendign to be possessed and shouting curses at them.
+description: How I Got over was first made famous by Clara Ward, who according to her sister, wrote the song after being racially attacked by a group of white men. Her mother got them to leave by pretending to be possessed and shouting curses at them.
 more-versions: https://secondhandsongs.com/performance/832659/versions
 versions: |
     Clara Ward and the Ward Singers (1950) <br>

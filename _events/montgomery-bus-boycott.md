@@ -9,6 +9,6 @@ image-desc: Rosa Parks being fingerprinted on February 22, 1956, by Lieutenant D
 source-name: National Park Service
 image-source: https://www.nps.gov/articles/000/places-of-rosa-parks.htm
 description: This was a protest against the policy of racial segregation on the public transit system in Montgomery, Alabama. This happened the Monday after Rosa Parks was arrested for her refusal to surrender her seat to a white person on a bus. The protest ended by the U.S Supreme Court ruling that segregation on public buses is unconstitutional.
-songdesc: During mass meetings for the protest one of the songs  sung over again to lift spirits was 'Keep Your Eyes on the Prize'
+songdesc: During mass meetings for the protest, one of the songs  sung over again to lift spirits was 'Keep Your Eyes on the Prize'
 song1: Keep Your Eyes on the Prize
 ---

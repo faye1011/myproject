@@ -12,11 +12,11 @@ Candidate number: AB18100
 URL of webpage: https://crmmusic.netlify.app/
 
 
-Data of the events are under the '_events' collection 
-Data of the songs are under the '_songs' collection
-Data of the cover arts are under the '_coverarts' collection
-Images are under the 'media' folder
-CSS style sheets are under the 'assets' folder
+Data of the events are under the '_events' collection </br>
+Data of the songs are under the '_songs' collection</br>
+Data of the cover arts are under the '_coverarts' collection</br>
+Images are under the 'media' folder </br>
+CSS style sheets are under the 'assets' folder</br>
 
 
 Submission date:

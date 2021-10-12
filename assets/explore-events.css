@@ -8,9 +8,12 @@ body {
     margin: auto;
  
 }
+.explore {
+    font-size: large;
+}
 .page-title {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 50px;
     text-align: center; 
     color: white;
 
@@ -19,6 +22,12 @@ body {
     text-align: center;
 }
 
+a {
+    color: rgb(68, 126, 233);
+}
+a:hover {
+    color: cornflowerblue;
+}
 /* Resposnive elements for mobile phones */
 @media screen and (max-width: 800px) {
 .container-one { 

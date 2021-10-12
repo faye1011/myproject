@@ -10,9 +10,12 @@ body {
     padding-bottom: 50px;
     background-color: black;
     text-align: center;
-    color: aliceblue;
+    color: white;
     
     
+}
+.explore {
+    font-size: large;
 }
 
 #songs-container{

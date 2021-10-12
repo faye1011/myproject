@@ -1,8 +1,9 @@
 /* Styling for the About page */
 
 body {
-    background-color: black;
-    color: white;
+    background-color: rgb(220, 220, 220);
+    color: black;
+    font-size: large;
 }
 
 .container-one {
@@ -11,6 +12,6 @@ body {
 }
 
 h2{
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 50px;
 }

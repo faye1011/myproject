@@ -2,21 +2,27 @@
 body {
     background-color: rgb(220, 220, 220);
 }
+
 .container-one {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
 h2 {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 50px;
     font-weight: 700;
    
 }
 a {
     text-decoration: underline;
     color: rgb(14, 14, 14);
-    font-size: large;
     
 }
+a:hover {
+    color: rgb(62, 61, 61);
+}
 
+p {
+    font-size: medium;
+}

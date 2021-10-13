@@ -28,6 +28,7 @@ a {
 a:hover {
     color: cornflowerblue;
 }
+
 /* Resposnive elements for mobile phones */
 @media screen and (max-width: 800px) {
 .container-one { 
